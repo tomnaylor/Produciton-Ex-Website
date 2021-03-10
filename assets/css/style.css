@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size:14px;
+    background: #fff;
+}
+
+#page-container {
+    padding-top: 20px;
+    min-height:100vh;
+    position: relative;
+    padding-bottom:280px;
+}
+
+#body-container {
+    max-width:1000px;
+    margin:0 auto;
+    /* border:5px solid #000; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 30px 50px -35px #000;
+}
+
+header {
+    height:400px;
+    background-image: url("https://www.stubhub.co.uk/magazine/sites/default/files/styles/default_teaser/public/2019-04/best-uk-festival-2019.jpg?itok=ib1CLZDH");
+    background-size: cover;
+    background-position: center 0;
+    z-index:2;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+
+#header-curve{
+    display:block;
+    border-top:5px solid #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    bottom: -95px;
+    left:-5%;
+    background: #ffffff;
+    width:110%;
+    height:150px;
+    z-index:1;
+    box-shadow: 0 -20px 120px 0px #000;
+}
+
+#header-cta {
+    position:absolute;
+    right:40px;
+    top:40px;
+    background: #F9642D;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#fff;
+    padding:10px 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    box-shadow: 10px -5px 40px -10px #000;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+#header-cta:hover {
+    background: #F9440D;
+    transform: scale(1.01);
+}
+
+#header-cta i.fas {
+    font-size:0.9em;
+    vertical-align: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    position: absolute;
+    bottom:65px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align: center;
+    z-index:5;
+}
+
+header nav ul li {
+    display: inline-block;
+    width:15%;
+}
+
+header nav ul li a {
+    font-family: 'Fjalla One', sans-serif;
+    font-size:21px;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 2px;
+    word-spacing:200px;
+    position:relative;
+    text-shadow: 0px 0px 5px #000;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+
+}
+
+header nav ul li a:hover {
+    color:#F9642D;
+    font-size:20px;
+}
+
+header nav ul li:nth-child(1) a {
+    top:15px;
+}
+header nav ul li:nth-child(2) a {
+    top:2px;
+}
+header nav ul li:nth-child(3) img {
+    width:50px;
+}
+header nav ul li:nth-child(4) a {
+    top:2px;
+}
+header nav ul li:nth-child(5) a {
+    top:15px;
+}
+
+
+
+
+#main-content {
+    width:100%;
+    padding:20px 10px 10px 10px;
+    z-index:50;
+    position: relative;
+    background: #ffffff;
+}
+
+
+#main-content h1 {
+    position:absolute;
+    text-align: center;
+    top:-40px;
+    left:0;
+    right:0;
+    font-size:40px;
+    font-weight:700;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display:inline-block;
+    color:#F9642D;
+}
+
+
+
+.box {
+    display: inline-block;
+}
+
+.box-third {
+    width: 33%;
+}
+
+
+
+/* -------------------------------- FOOTER ---------- */
+footer {
+    position: absolute;
+    bottom:0;
+    padding:20px 20px;
+    height:200px;
+    background: #333;
+    width:100%;
+    box-shadow: inset 0px 30px 30px -20px #000;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:14px;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 2px;
+    word-spacing:2px;
+}
+
+
+#footer-socials ul {
+    list-style-type: none;
+    width:130px;
+}
+
+
+#footer-socials ul li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+
+#footer-socials ul li a i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding:7px 0 0 3px;
+    border: 3px solid #222;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #F9642D;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+
+}
+
+#footer-socials ul li a i.fa-facebook:hover {
+    background: #3D548E;
+    background: linear-gradient(120deg, #3b5998, #fff);
+}
+#footer-socials ul li a i.fa-instagram:hover {
+    background: #C80174;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+#footer-socials ul li a i.fa-twitter:hover {
+    background: #34B3F7;
+    background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+}
+#footer-socials ul li a i.fa-linkedin:hover {
+    background: #0077b5;
+    background: linear-gradient(45deg, #0077b5, #caccce, #00a0dc);
+}
+
+#footer-socials ul li a i.fa-github:hover {
+    background: #4078c0;
+    background: linear-gradient(45deg, #4078c0, #6e5494, #bd2c00, #c9510c, #6cc644, #fafafa);
+}
+
+#footer-socials ul li a i.fa-slack:hover {
+    background: #3eb991;
+    background: linear-gradient(-120deg, #3eb991, #6ecadc, #e9a820, #e01563);
+}
+
+
+
+
+
+
+.input-block {
+    display: inline-block;
+    padding:5px 10px;
+    margin-right:50px;
+    border:1px solid #ddd;
+    border-top-right-radius: 30px;
+}
+label {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+    display: block;
+    font-weight:400;
+    padding-bottom:15px;
+}
+input[type=text], input[type=email] {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
+
+/* input:required {
+  border:1px dotted red;
+} */
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+/* input:required:focus {
+  border: 2px solid green;
+  outline: none;
+} */
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+
+
+/* input:invalid:focus {
+  border:1px solid red;
+}input:valid {
+  border: 1px solid green;
+} */
