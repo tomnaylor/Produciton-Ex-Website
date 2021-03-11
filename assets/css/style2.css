@@ -15,30 +15,17 @@ body {
     background: #fff;
 }
 
-#page-container {
-    padding-top: 20px;
-    min-height:100vh;
-    position: relative;
-    padding-bottom:280px;
-}
-
-#body-container {
-    max-width:1000px;
-    margin:0 auto;
-    /* border:5px solid #000; */
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 30px 50px -35px #000;
-}
 
 header {
-    height:400px;
+    height:60vh;
     background-image: url("https://www.stubhub.co.uk/magazine/sites/default/files/styles/default_teaser/public/2019-04/best-uk-festival-2019.jpg?itok=ib1CLZDH");
     background-size: cover;
     background-position: center 0;
     z-index:2;
     position: relative;
     background-repeat: no-repeat;
+    width:100%;
+    overflow:hidden;
 }
 
 
@@ -55,101 +42,74 @@ header {
     width:110%;
     height:150px;
     z-index:1;
-    box-shadow: 0 -20px 120px 0px #000;
+    box-shadow: 0 -20px 120px 40px #000;
+
 }
 
-#header-cta {
-    position:absolute;
-    right:40px;
-    top:40px;
-    background: #F9642D;
+
+
+header nav ul {
+    position: absolute;
+    top:60px;
+    right:60px;
+    list-style: none;
+    z-index:5;
+    display:inline-block;
+/* 
+    background: rgba(0,0,0,0.1);
+    padding:15px 15px;
+    border-radius: 30px; */
+}
+
+header nav ul li {
+    display: inline-block;
+    min-width:120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header nav ul li a  {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
+    font-size:21px;
     text-transform: uppercase;
     color:#fff;
-    padding:10px 40px;
-    border-radius: 30px;
+    letter-spacing: 2px;
+    word-spacing:4px;
+    text-shadow: 0px 0px 5px #000;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color:#ffc2ac;
+    font-size:20px;
+}
+
+header nav ul li:nth-child(1) img {
+    width:48px;
+}
+
+#header-cta {
+    margin-left:30px;
+    background: #F9642D;
+    padding:10px 40px;
+    border-radius: 30px;
     box-shadow: 10px -5px 40px -10px #000;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+    display:inline-block;
+    width:200px;
+    text-shadow: none;
 }
 #header-cta:hover {
     background: #F9440D;
     transform: scale(1.01);
 }
 
-#header-cta i.fas {
-    font-size:0.9em;
-    vertical-align: 1px;
-}
-
-header nav ul {
-    list-style: none;
-    position: absolute;
-    bottom:65px;
-    left:0;
-    right:0;
-    margin:0 auto;
-    text-align: center;
-    z-index:5;
-}
-
-header nav ul li {
-    display: inline-block;
-    width:15%;
-}
-
-header nav ul li a {
-    font-family: 'Fjalla One', sans-serif;
-    font-size:21px;
-    text-transform: uppercase;
-    color:#fff;
-    letter-spacing: 2px;
-    word-spacing:200px;
-    position:relative;
-    text-shadow: 0px 0px 5px #000;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-
-
-}
-
-header nav ul li a:hover {
-    color:#F9642D;
-    font-size:20px;
-}
-
-header nav ul li a i {
-    font-size:15px;
-}
-
-header nav ul li:nth-child(1) a {
-    top:15px;
-}
-header nav ul li:nth-child(2) a {
-    top:2px;
-}
-header nav ul li:nth-child(3) img {
-    width:50px;
-}
-header nav ul li:nth-child(4) a {
-    top:2px;
-}
-header nav ul li:nth-child(5) a {
-    top:15px;
-}
-
-
 
 
 #main-content {
-    width:100%;
+    max-width:1000px;
     padding:20px 10px 10px 10px;
     z-index:50;
     position: relative;
