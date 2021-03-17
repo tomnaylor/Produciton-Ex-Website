@@ -1,4 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/************************************ COLOURS *********************/
+.color-accent-bg {
+    background-color: #F9642D;
+    /* background-color: #64F92D; */
+}
+.color-accent-bg-hover:hover {
+    background-color: #F9440D;
+    /* background-color: #64A92D; */
+}
+.color-accent {
+    color: #F9642D;
+    /* color: #64F92D; */
+}
+.color-accent-hover:hover {
+    color: #F9642D;
+    /* color: #64F92D; */
+}
+
+
+
+.color-light {
+    color: #eee;
+}
+
+
+
+
 
 * {
     margin:0;
@@ -16,14 +44,14 @@ body {
 }
 
 #page-container {
-    padding-top: 20px;
+    padding-top: 0px;
     min-height:100vh;
     position: relative;
     padding-bottom:280px;
 }
 
 #body-container {
-    max-width:1000px;
+    max-width:1100px;
     margin:0 auto;
     /* border:5px solid #000; */
     position: relative;
@@ -45,7 +73,7 @@ header {
 
 #header-curve{
     display:block;
-    border-top:5px solid #000;
+    border-top:10px solid #111;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     position: absolute;
@@ -55,37 +83,42 @@ header {
     width:110%;
     height:150px;
     z-index:1;
-    box-shadow: 0 -20px 120px 0px #000;
+    box-shadow: 0 -10px 120px 30px #000;
+
 }
+
+.button {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding:10px 30px;
+    border:0;
+    letter-spacing: 1px;
+
+}
+.button i.fas {
+    font-size:0.9em;
+    vertical-align: 0px;
+}
+
+
 
 #header-cta {
     position:absolute;
     right:40px;
     top:40px;
-    background: #F9642D;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color:#fff;
-    padding:10px 40px;
-    border-radius: 30px;
+    font-size: 15px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     box-shadow: 10px -5px 40px -10px #000;
     word-spacing: 4px;
-    letter-spacing: 2px;
 }
 #header-cta:hover {
-    background: #F9440D;
     transform: scale(1.01);
 }
 
-#header-cta i.fas {
-    font-size:0.9em;
-    vertical-align: 1px;
-}
 
 header nav ul {
     list-style: none;
@@ -104,10 +137,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size:21px;
     text-transform: uppercase;
-    color:#fff;
     letter-spacing: 2px;
     word-spacing:200px;
     position:relative;
@@ -116,12 +148,9 @@ header nav ul li a {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-
-
 }
 
 header nav ul li a:hover {
-    color:#F9642D;
     font-size:20px;
 }
 
@@ -153,7 +182,7 @@ header nav ul li:nth-child(5) a {
     padding:20px 10px 10px 10px;
     z-index:50;
     position: relative;
-    background: #ffffff;
+    background: #fff;
 }
 
 
@@ -163,18 +192,16 @@ header nav ul li:nth-child(5) a {
     text-align: left;
     font-size:40px;
     font-weight:700;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     display:block;
-    color:#F9642D;
 }
 
 
 
 .box {
     display: inline-block;
-    border:1px solid red;
     vertical-align: top;
 }
 
@@ -196,7 +223,7 @@ footer {
     background: #333;
     width:100%;
     box-shadow: inset 0px 30px 30px -20px #000;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size:14px;
     text-transform: uppercase;
     color:#fff;
@@ -225,8 +252,6 @@ footer {
     border: 3px solid #222;
     font-size: 20px;
     text-align: center;
-    color: #fff;
-    background-color: #F9642D;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -266,28 +291,38 @@ footer {
 
 
 
+/*********************************** FORM CONTROLS ************************/
+
 .input-block {
     display: inline-block;
-    padding:5px 10px;
-    margin-right:50px;
-    border:1px solid #ddd;
-    border-top-right-radius: 30px;
+    padding:0;
+    margin:0 50px 50px 0;
+    border:0 dotted #ccc;
+    border-radius: 3px;
+    position: relative;
 }
 label {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
     letter-spacing: 1px;
-    display: block;
-    font-weight:400;
-    padding-bottom:15px;
+    display: inline-block;
+    padding:0;
+    font-weight:300;
+    text-transform: uppercase;
+    position: absolute;
+    left:0;
+    top:2px;
+    width:150px;
 }
 input[type=text], input[type=email] {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
+    font-size: 1.2em;
     letter-spacing: 1px;
     outline: 0;
     border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 0 10px 0 160px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -302,6 +337,11 @@ input[type=text], input[type=email] {
 :-moz-placeholder { /* Firefox 18- */
   color: #ccc;
 }
+
+
+#form-demo-name { width:450px; }
+#form-demo-phone { width:400px; }
+#form-demo-email { width:600px; }
 
 
 /* input:required {
