@@ -284,8 +284,10 @@ h2 {
     margin:0 20px 40px 20px;
     display:inline-block;
     border:1px solid #ddd;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     overflow: hidden;
     position:relative;
     box-shadow: 0 10px 25px -15px #000;
@@ -359,18 +361,58 @@ footer {
     bottom:0;
     margin-top:60px;
     padding:20px 20px;
-    height:200px;
+    min-height:200px;
     background: #333;
     width:100%;
     box-shadow: inset 0px 30px 30px -20px #000;
     font-family: 'Lato', sans-serif;
     font-size:14px;
-    text-transform: uppercase;
     color:#fff;
-    letter-spacing: 2px;
-    word-spacing:2px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+
 }
 
+footer h5 {
+    display:inline-block;
+    font-size: 20px;
+    padding-bottom:12px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-transform: uppercase;
+}
+
+footer > .footer-box {
+    width:22%;
+    display:inline-block;
+    vertical-align: top;
+
+}
+
+footer ul.footer-latest-media li {
+    margin-bottom:5px;
+}
+
+footer ul.footer-latest-media li::before {
+    content: "\f0c9";
+    padding-right:10px;
+    font-family: "Font Awesome 5 Free";
+}
+
+footer ul.footer-latest-media {
+    list-style: none;
+}
+
+
+footer .footer-logo {
+    width:20px;
+    margin-right:10px;
+    position: relative;
+}
+
+footer p {
+    font-weight: 300;
+}
 
 #footer-socials ul {
     list-style-type: none;
@@ -646,4 +688,14 @@ header nav ul li.header-logo {
 
 #form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
 
+
+.feature-card {
+    width:100%;
+    height:auto;
+    margin:20px 0;
+    
+    border:0;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px -15px #000;
+}
 }
