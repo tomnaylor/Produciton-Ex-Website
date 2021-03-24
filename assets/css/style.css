@@ -127,6 +127,10 @@ header:before {
     z-index: 2;
 }
 
+#header-hamburger {
+    display:none;
+}
+
 header nav ul {
     list-style: none;
     position: relative;
@@ -138,7 +142,7 @@ header nav ul {
 header nav ul li {
     vertical-align: top;
     display: inline-block;
-    width:12%;
+    width:15%;
 }
 
 header nav ul li a {
@@ -155,7 +159,7 @@ header nav ul li a {
     -o-transition: color 0.3s ease-in-out;
 }
 
-header nav ul li:nth-child(4) img {
+header nav ul li.header-logo img {
     width:50px;
 }
 
@@ -187,7 +191,7 @@ header nav ul li:nth-child(4) img {
     /* https://www.stubhub.co.uk/magazine/sites/default/files/styles/default_teaser/public/2019-04/best-uk-festival-2019.jpg?itok=ib1CLZDH */
     background-image: url("https://fivestarcrew.co.uk/app/uploads/2018/11/Da1-gYrX4AA60ta.jpg");
     background-size: cover;
-    background-position: center -170px;
+    background-position: center -0;
     background-repeat: no-repeat;
     position: relative;
     top:-100px;
@@ -525,27 +529,82 @@ input[type=text], input[type=email] {
 
 
 
+
+
+
+
+
+/* ---------------------------------------- TABLET ONLY */
+
+@media only screen and (max-width: 768px) {
+
+header {
+}
+
+header nav ul li {
+    width:23%;
+}
+
+header nav ul li.header-logo {
+    display:none;
+}
+
+#header-cta {  
+    top:160px;
+    right:30px;
+}
+
+
+#hero-text h1 {
+    font-size:45px;
+}
+
+#hero-text h2 {
+    font-size:30px;
+}
+
+
+#form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
+
+}
+
+
+
+
+
+
+
 /* ---------------------------------------- MOBILE ONLY */
 
 @media only screen and (max-width: 600px) {
 
 header {
     position: absolute;
-    height:290px;
+    height:55px;
+    transition: height 1s ease;
+
 }
+
+header.header-mobile-open {
+    height:250px;
+    transition: height 1s ease;
+}
+
 
 header:before {
     width:280%;
     left:-90%;
 }
 
-header nav ul {
-    /* list-style: none;
+#header-hamburger {
+    display:block;
     position: relative;
-    top:20px;
+    top:10px;
     text-align: center;
-    z-index: 5; */
+    z-index: 5;
+    font-size: 30px;
 }
+
 
 header nav ul li {
     display: block;
@@ -553,7 +612,7 @@ header nav ul li {
     margin:11px 0;
 }
 
-header nav ul li:nth-child(4) img {
+header nav ul li.header-logo {
     display:none;
 }
 
@@ -574,9 +633,6 @@ header nav ul li:nth-child(4) img {
     animation-name: hero-text;
     animation-duration: 3s;
     animation-fill-mode: forwards; */
-}
-#hero-image {
-    background-position: center 0;
 }
 
 #hero-text h1 {

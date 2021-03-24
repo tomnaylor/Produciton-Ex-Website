@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <script></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,17 +12,17 @@
 
 
 <header>
-                    
+ 
+    <span id="header-hamburger" class="color-light"><i class="fas fa-hamburger"></i></span>
+
     <nav>
         <ul>
             <li><a href="" class="color-light color-accent-hover">Features</a></li>
             <li><a href="" class="color-light color-accent-hover">Resources</a></li>
-            <li><a href="" class="color-light color-accent-hover">Demo</a></li>
-            <li><a href=""><img src="https://www.productionex.com/productionex-logo.png"></a></li>
-            <li><a href="" class="color-light color-accent-hover">News</a></li>
-            <li><a href="" class="color-light color-accent-hover">Clients</a></li>
+            <li class="header-logo"><a href=""><img src="https://www.productionex.com/productionex-logo.png"></a></li>
             <li><a href="" class="color-light color-accent-hover">Pricing</a></li>
-        </ul>
+             <li><a href="" class="color-light color-accent-hover">Demo</a></li>
+       </ul>
     </nav>
 </header>
 
@@ -137,5 +137,21 @@
     </div>
 </footer>
 
+
+
+<script>
+    document.getElementById("header-hamburger").onclick = function() {
+        var x = document.querySelector("header");
+
+        x.classList.toggle("header-mobile-open");
+
+
+        // if ((x.style.height === "45px") || (x.style.height === "")) {
+        //     x.style.height = "290px";
+        // } else {
+        //     x.style.height = "45px";
+        // }
+    }
+</script>
 </body>
 </html>
