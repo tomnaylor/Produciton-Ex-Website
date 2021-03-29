@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.0/css/all.css');
+
 
 /* ---------------------------------------- COLOURS #D96415 #F9440D */
 .color-accent-bg, .color-accent-bg-hover:hover {
@@ -6,6 +8,10 @@
 }
 .color-accent, .color-accent-hover:hover {
     color: #F9440D;
+    color: #d91200;
+}
+.color-accent-light, .color-accent-light-hover:hover {
+    color: #f75;
 }
 
 /* .color-accent-dark-bg, .color-accent-dark-bg-hover:hover {
@@ -67,10 +73,15 @@
 }
 
 
-/* ---------------------------------------- FORMATTING */
+/* ---------------------------------------- SCREEN READERS */
 
-.center {
-    text-align: center;
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 
@@ -78,8 +89,62 @@
 
 
 
+/* ---------------------------------------- FORMATTING */
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-upper {
+    text-transform: uppercase;
+}
 
 
+
+
+
+
+/* ---------------------------------------- MODAL */
+.modal {
+    background-color: rgba(0,0,0,0.8);
+    height:100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+
+.modal-box {
+    background-color: rgba(255,255,255,1);
+    height:80vh;
+    width:80vw;
+    max-width:500px;
+    position: fixed;
+    top:100px;
+    left:100px;
+    z-index: 9999;
+    border-radius: 10px;
+    padding:40px 20px 20px 20px;
+    box-shadow: 0px 0px 40px -10px #000;
+}
+
+.modal-hide {
+    display: none;
+}
+
+.modal .button-close {
+    position: absolute;
+    right:0;
+    top:0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 
 
@@ -159,9 +224,6 @@ header nav ul li a {
     -o-transition: color 0.3s ease-in-out;
 }
 
-header nav ul li.header-logo img {
-    width:50px;
-}
 
 
 #header-cta {
@@ -188,8 +250,7 @@ header nav ul li.header-logo img {
     overflow: hidden;
     height:80vh;
     width:100%;
-    /* https://www.stubhub.co.uk/magazine/sites/default/files/styles/default_teaser/public/2019-04/best-uk-festival-2019.jpg?itok=ib1CLZDH */
-    background-image: url("https://fivestarcrew.co.uk/app/uploads/2018/11/Da1-gYrX4AA60ta.jpg");
+    background-image: url("../images/bg-desktop.jpg");
     background-size: cover;
     background-position: center -0;
     background-repeat: no-repeat;
@@ -221,9 +282,9 @@ header nav ul li.header-logo img {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     display:block;
-    animation-name: hero-text;
+    /* animation-name: hero-text;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #hero-text h1 {
@@ -236,11 +297,11 @@ header nav ul li.header-logo img {
 }
 
 #hero-text h2 {
-    font-size:35px;
+    font-size:26px;
     font-weight:700;
     text-shadow: 0px 0px 20px #000,0px 0px 20px #000;
     letter-spacing: 0px;
-    word-spacing: 10px;
+    word-spacing: 7px;
 }
 
 
@@ -261,17 +322,26 @@ header nav ul li.header-logo img {
 }
 
 
+h2,h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    letter-spacing: 1px;
+    display:block;
+
+}
+
+
 h2 {
     position: relative;
-    text-align: center;
     font-size:40px;
-    font-weight:300;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    display:block;
     text-shadow: 0px 0px 10px #ccc;
     margin-bottom:80px;
+}
+
+h3 {
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:20px;
 }
 
 
@@ -306,15 +376,9 @@ h2 {
 
 }
 .feature-card h3 {
-    font-size:20px;
-    font-weight:500;
-    letter-spacing: 0px;
-    word-spacing: 10px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    margin:15px 0;
+    margin:15px 10px;
 }
+
 .feature-card p {
     margin:0 10px 20px 10px;
     font-size:14px;
@@ -325,11 +389,11 @@ h2 {
     font-family: 'Lato', sans-serif;
 }
 #feature-card-al .feature-card-image {
-    background-image: url("https://www.artistneeds.com/wp-content/uploads/sites/2/2018/02/ArtistNeedsAdvancingServices.jpg");
+    background-image: url("../images/feature-al.jpg");
 }
 
 #feature-card-gt .feature-card-image {
-    background-image: url("https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/94/65/b1.jpg");
+    background-image: url("../images/feature-gt.jpg");
 }
 
 /* 
@@ -360,80 +424,116 @@ footer {
     position: relative;
     bottom:0;
     margin-top:60px;
-    padding:20px 20px;
+    padding:60px 50px;
     min-height:200px;
     background: #333;
     width:100%;
     box-shadow: inset 0px 30px 30px -20px #000;
     font-family: 'Lato', sans-serif;
     font-size:14px;
-    color:#fff;
+    font-weight: 300;
     letter-spacing: 0px;
     word-spacing: 0px;
 
 }
 
-footer h5 {
-    display:inline-block;
-    font-size: 20px;
-    padding-bottom:12px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    text-transform: uppercase;
-}
 
 footer > .footer-box {
-    width:22%;
+    width:18%;
     display:inline-block;
     vertical-align: top;
+    margin:0 3%;
+}
+
+footer .footer-text-head {
+    display:inline-block;
+    font-size: 16px;
+    padding-bottom:20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-weight: 500;
+}
+
+
+footer ul.footer-ul {
+    list-style: none;
 
 }
 
-footer ul.footer-latest-media li {
-    margin-bottom:5px;
+footer ul.footer-ul li {
+    line-height: 1.5em;
+    margin-bottom:15px;
+    margin-left:25px;
+    position:relative
 }
 
-footer ul.footer-latest-media li::before {
-    content: "\f0c9";
+
+
+
+
+footer .footer-contact-us ul.footer-ul {
+    text-align: right;
+}
+
+
+
+
+
+footer .footer-latest-news ul.footer-ul li a {
+    margin-left:5px;
+    font-size: 0.85em;
+}
+
+footer ul.footer-ul li::before {
+    content: "\f105";
     padding-right:10px;
     font-family: "Font Awesome 5 Free";
+    position:absolute;
+    left:-25px;
 }
 
-footer ul.footer-latest-media {
-    list-style: none;
+footer ul.footer-ul li.video::before {
+    content: "\f144";
 }
+
+footer ul.footer-ul li.news::before {
+    content: "\f1ea";
+}
+
+
+footer .footer-site-info ul.footer-ul li {
+    display:inline-block;
+    margin: 0 0 25px 25px;
+}
+
 
 
 footer .footer-logo {
-    width:20px;
     margin-right:10px;
     position: relative;
+    color:#fff;
 }
 
 footer p {
     font-weight: 300;
 }
 
-#footer-socials ul {
+
+
+#footer-socials {
+    margin-top:40px;
     list-style-type: none;
-    width:130px;
 }
 
 
-#footer-socials ul li {
+#footer-socials li {
     display: inline-block;
-    margin: 0 10px 10px 0;
+    margin: 0 0 10px 15px;
 }
 
 
-#footer-socials ul li a i {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding:7px 0 0 3px;
-    border: 3px solid #222;
-    font-size: 20px;
-    text-align: center;
+#footer-socials li a i {
+    font-size: 18px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -441,31 +541,25 @@ footer p {
 
 }
 
-#footer-socials ul li a i.fa-facebook:hover {
-    background: #3D548E;
-    background: linear-gradient(120deg, #3b5998, #fff);
+#footer-socials li a i.fa-facebook:hover {
+    color: #3D548E;
 }
-#footer-socials ul li a i.fa-instagram:hover {
-    background: #C80174;
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+#footer-socials li a i.fa-app-store:hover {
+    color: #44F;
 }
-#footer-socials ul li a i.fa-twitter:hover {
-    background: #34B3F7;
-    background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+#footer-socials li a i.fa-twitter:hover {
+    color: #34B3F7;
 }
-#footer-socials ul li a i.fa-linkedin:hover {
-    background: #0077b5;
-    background: linear-gradient(45deg, #0077b5, #caccce, #00a0dc);
+#footer-socials li a i.fa-linkedin:hover {
+    color: #0077b5;
 }
 
-#footer-socials ul li a i.fa-github:hover {
-    background: #4078c0;
-    background: linear-gradient(45deg, #4078c0, #6e5494, #bd2c00, #c9510c, #6cc644, #fafafa);
+#footer-socials li a i.fa-github:hover {
+    color: #4078c0;
 }
 
-#footer-socials ul li a i.fa-slack:hover {
-    background: #3eb991;
-    background: linear-gradient(-120deg, #3eb991, #6ecadc, #e9a820, #e01563);
+#footer-socials li a i.fa-google-play:hover {
+    color: #3eb991;
 }
 
 
@@ -484,6 +578,7 @@ footer p {
     border:0;
     letter-spacing: 1px;
     box-shadow: 0px 0px 20px -10px #000;
+    cursor: pointer;
 }
 
 .button i.fas {
@@ -493,7 +588,7 @@ footer p {
 
 
 
-.input-block {
+/* .input-block {
     display: inline-block;
     padding:0;
     margin:0 50px 50px 0;
@@ -523,7 +618,40 @@ input[type=text], input[type=email] {
     border: none;
     border-bottom: 1px solid #aaa;
     padding: 0 10px 0 160px;
+} */
+
+.input-block {
+    display: block;
+    padding:0;
+    margin:0 0 50px 0;
+    border:0 dotted #ccc;
+    border-radius: 3px;
+    position: relative;
 }
+label {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding:0;
+    font-weight:300;
+    text-transform: uppercase;
+    position: absolute;
+    left:0;
+    top:2px;
+    width:150px;
+}
+input[type=text], input[type=email] {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0 10px 0 160px;
+}
+
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ccc;
@@ -539,9 +667,9 @@ input[type=text], input[type=email] {
 }
 
 
-#form-demo-name { width:450px; }
-#form-demo-phone { width:400px; }
-#form-demo-email { width:600px; }
+#form-demo-name { width:100%; }
+#form-demo-phone { width:100%; }
+#form-demo-email { width:100%; }
 
 
 /* input:required {
@@ -576,12 +704,13 @@ input[type=text], input[type=email] {
 
 
 
+
+
+
 /* ---------------------------------------- TABLET ONLY */
 
 @media only screen and (max-width: 768px) {
 
-header {
-}
 
 header nav ul li {
     width:23%;
@@ -596,6 +725,10 @@ header nav ul li.header-logo {
     right:30px;
 }
 
+#hero-image {
+    min-height:500px;
+    background-image: url("../images/bg-tablet.jpg");
+}
 
 #hero-text h1 {
     font-size:45px;
@@ -607,6 +740,21 @@ header nav ul li.header-logo {
 
 
 #form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
+
+
+
+footer {
+    padding:50px 10px;
+}
+
+footer .footer-productionex {
+    display: none;
+}
+footer > .footer-box {
+    width:26%;
+    margin:0 7% 0 0;
+
+}
 
 }
 
@@ -662,6 +810,9 @@ header nav ul li.header-logo {
 
 
 
+#hero-image {
+    background-image: url("../images/bg-mobile.jpg");
+}
 
 #hero-text {
     /* position: absolute;
@@ -698,4 +849,32 @@ header nav ul li.header-logo {
     border-radius: 3px;
     box-shadow: 0 10px 25px -15px #000;
 }
+
+
+
+
+
+
+
+
+
+footer {
+    padding:50px 10px;
+}
+
+footer > .footer-box {
+    width:100%;
+    display:block;
+    margin:0 0 60px 0;
+
+}
+
+footer > .footer-box h5 {
+    font-weight:300;
+}
+
+
+
+
+
 }

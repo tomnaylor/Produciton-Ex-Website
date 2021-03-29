@@ -4,73 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <meta name="Description" content="ProductionEx - World leading production management software for festivals, theatre and other large events">
     <script></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-
-<header>
- 
-    <span id="header-hamburger" class="color-light"><i class="fas fa-hamburger"></i></span>
-
-    <nav>
-        <ul>
-            <li><a href="" class="color-light color-accent-hover">Features</a></li>
-            <li><a href="" class="color-light color-accent-hover">Resources</a></li>
-            <li class="header-logo"><a href=""><img src="https://www.productionex.com/productionex-logo.png"></a></li>
-            <li><a href="" class="color-light color-accent-hover">Pricing</a></li>
-             <li><a href="" class="color-light color-accent-hover">Demo</a></li>
-       </ul>
-    </nav>
-</header>
-
-
-
-<div id="hero-image">
-    <a href="" id="header-cta" class="button color-accent color-light-bg color-accent-bg-hover color-light-hover"><i class="fas fa-desktop"></i> Live Demo</a>
-    <div id="hero-text">
-        <h1 class="color-light">
-            Production <span class="color-accent">Ex</span>
-        </h1>
-        <h2 class="color-light">Get in touch</h2>
-    </div>
-</div>
-
-
-
-<main id="main-content">
-
-    <article class="center">
-
-        <h2 class="color-accent">Contact Us</h2>
-
-        <section id="feature-card-al" class="feature-card">
-            <div class="feature-card-image"></div>
-            <h3 class="color-accent">Artist Liaison</h3>
-            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
-            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
-        </section>
-
-        <section id="feature-card-gt" class="feature-card">
-            <div class="feature-card-image"></div>
-            <h3 class="color-accent">Ground Transport</h3>
-            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
-            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
-        </section>
-
-        <section id="feature-card-al" class="feature-card">
-            <div class="feature-card-image"></div>
-            <h3 class="color-accent">Artist Liaison</h3>
-            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
-            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
-        </section>
-
-    </article>
-
-
-    <div class="box box-center">
+<div id="modal-contact" class="modal modal-hide">
+    <div class="modal-box">
+        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
+    
+        <h3 class="color-dark">Request demo</h3>
 
         <form action="" >
 
@@ -86,10 +30,96 @@
                 <label for="form-demo-email" class="color-accent">Email address</label>
                 <input type="email" id="form-demo-email" name="email" placeholder="joe.blog@email.com" required>
             </div>
+
+            <div class="input-block">
+                <label class="color-accent">Event type</label>
+            </div>
+
+            <div class="input-block">
+                <label for="road">Road</label>
+                <input type="radio" id="road" name="running_preference" value="road" required>
+            </div>
+
+            <div class="input-block">
+
+                <label for="trail">Trail</label>
+                <input type="radio" id="trail" name="running_preference" value="trail" required>
+            </div>
+
+            <div class="input-block">
+
+                <label for="both">Both</label>
+                <input type="radio" id="both" name="running_preference" value="both" required>
+            </div>
+
+            
             <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-at"></i> Contact Us</button>
         </form>
 
     </div>
+</div>
+
+
+<header>
+ 
+    <span id="header-hamburger" class="color-light"><i class="fas fa-hamburger"></i></span>
+
+    <nav>
+        <ul>
+            <li><a href="features.html" class="color-light color-accent-hover">Features</a></li>
+            <li><a href="resources.html" class="color-light color-accent-hover">Resources</a></li>
+            <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50px" height="50px" alt="ProductionEx Logo"></a></li>
+            <li><a href="pricing.html" class="color-light color-accent-hover">Pricing</a></li>
+             <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')">Demo</a></li>
+       </ul>
+    </nav>
+</header>
+
+
+
+<div id="hero-image">
+    <button id="header-cta" class="button color-accent color-light-bg color-accent-bg-hover color-light-hover" 
+        onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Live Demo</button>
+    <div id="hero-text">
+        <h1 class="color-light">
+            Production <span class="color-accent">Ex</span>
+        </h1>
+        <h2 class="color-light">Event production software</h2>
+    </div>
+</div>
+
+
+
+<main id="main-content">
+
+    <article class="center">
+
+        <h2 class="color-accent text-center">Features</h2>
+
+        <section id="feature-card-al" class="feature-card">
+            <div class="feature-card-image"></div>
+            <h3 class="color-accent text-upper">Artist Liaison</h3>
+            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+        </section>
+
+        <section id="feature-card-gt" class="feature-card">
+            <div class="feature-card-image"></div>
+            <h3 class="color-accent text-upper">Ground Transport</h3>
+            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+        </section>
+
+        <section id="feature-card-al" class="feature-card">
+            <div class="feature-card-image"></div>
+            <h3 class="color-accent text-upper">Artist Liaison</h3>
+            <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+            <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+        </section>
+
+    </article>
+
+
 </main>
 
 
@@ -97,51 +127,93 @@
 
 
 <footer>
-    <div class="footer-box">
+    <div class="footer-box footer-productionex color-light">
         
-        <h5 class="footer-logo-text color-light"><img src="https://www.productionex.com/productionex-logo.png" class="footer-logo"> Production<span class="color-accent">Ex</span></h5>
+        <div class="footer-text-head text-upper color-light">
+            <img src="assets/images/productionex-footer-logo.png" class="footer-logo" height="16px" width="16px" alt="ProductionEx Logo"> Production<span class="color-accent-light">Ex</span></div>
         <p>ProductionEx is a world leading software solution to manage festivals, theatre and other large scale events. Effortlessly manage your artists, guest list, stage times and more.</p>
     </div>
 
-    <div class="footer-box">
-        <h5 class="footer-logo-text color-light">Latest<span class="color-accent">Media</span></h5>
-        <ul class="footer-latest-media">
-            <li>sfdfdsf</li>
-            <li>sdfsdfds</li>
+    <div class="footer-box footer-latest-news color-light">
+        <div class="footer-text-head text-upper color-light">Latest<span class="color-accent-light">Media</span></div>
+        <ul class="footer-ul">
+            <li class="news">
+                HYPERTEXT festival intergrates ProdEx into their production workflow 
+                <a href="#" class="color-accent-light color-light-hover">Read more about our partnership here</a>
+            </li>
+            <li class="news">
+                ProdEx launches a new Slack intergration; Push realtime messages to your <i class="fab fa-slack"></i> network
+                <a href="#" class="color-accent-light color-light-hover">Test our live demo here</a>
+            </li>
+            <li class="video">
+                How to export schedules in multiple formats; A video guide
+                <a href="#" class="color-accent-light color-light-hover">Watch our new tutorial here</a>
+            </li>
+            <li class="news">
+                API V3 is now avalible
+                <a href="#" class="color-accent-light color-light-hover">Read the docs here</a>
+            </li>
         </ul>
     </div>
 
 
-    <div class="footer-box" id="footer-socials">
-        <ul>
+    <div class="footer-box footer-site-info text-right">
+        <div class="footer-text-head text-upper color-light">Site<span class="color-accent-light">Info</span></div>
+        <nav>
+            <ul class="footer-ul">
+                <li><a href="index.html" class="color-light color-accent-hover">Home</a></li>
+                <li><a href="features.html" class="color-light color-accent-hover">Features</a></li>
+                <li><a href="resources.html" class="color-light color-accent-hover">Resources</a></li>
+                <li><a href="pricing.html" class="color-light color-accent-hover">Pricing</a></li>
+                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')">Demo</a></li>
+                <li><a href="#" class="color-light color-accent-hover">Accessibility</a></li>
+                <li><a href="#" class="color-light color-accent-hover">T&Cs</a></li>
+                <li><a href="#" class="color-light color-accent-hover">Privicy Notices</a></li>
+                <li><a href="#" class="color-light color-accent-hover">Cookies</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="footer-box footer-contact-us text-right">
+
+        <div class="footer-text-head text-upper color-light">Contact<span class="color-accent-light">Us</span></div>
+
+        <ul class="footer-ul">
+            <li class="color-light phone"><a href="tel:02920222222" class="color-light color-accent-hover">02920 222 222</a></li>
+            <li class="color-light email"><a href="mailto:info@productionex.co.uk" class="color-light color-accent-hover">info@productionex.co.uk</a></li>
+            <li class="color-light mail">10 Queen Street<br>Cardiff<br>CF10 1PR</li>
+        </ul>
+
+        <ul id="footer-socials">
             <li>
-                <a target="_blank" href="https://www.facebook.com/productionEx">
-                    <i class="fab fa-facebook color-light color-accent-bg"></i>
+                <a target="_blank" href="https://www.facebook.com/productionEx" rel="noreferrer">
+                    <i class="fab fa-facebook color-light" aria-hidden="true" title="Facebook"></i><span class="sr-only">Facebook</span>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.linkedin.com">
-                    <i class="fab fa-linkedin color-light color-accent-bg"></i>
+                <a target="_blank" href="https://www.linkedin.com" rel="noreferrer">
+                    <i class="fab fa-linkedin color-light" aria-hidden="true" title="Linkedin"></i><span class="sr-only">Linkedin</span>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com">
-                    <i class="fab fa-instagram color-light color-accent-bg"></i>
+                <a target="_blank" href="https://www.twitter.com" rel="noreferrer">
+                    <i class="fab fa-twitter color-light" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.twitter.com">
-                    <i class="fab fa-twitter color-light color-accent-bg"></i>
+                <a target="_blank" href="https://github.com/tomnaylor" rel="noreferrer">
+                    <i class="fab fa-github color-light" aria-hidden="true" title="Github"></i><span class="sr-only">Github</span>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.twitter.com">
-                    <i class="fab fa-github color-light color-accent-bg"></i>
+                <a target="_blank" href="https://www.google.com" rel="noreferrer">
+                    <i class="fab fa-google-play color-light" aria-hidden="true" title="Google play store"></i><span class="sr-only">Google play store</span>
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.twitter.com">
-                    <i class="fab fa-slack color-light color-accent-bg"></i>
+                <a target="_blank" href="https://www.apple.com" rel="noreferrer">
+                    <i class="fab fa-app-store color-light" aria-hidden="true" title="Apple app store"></i><span class="sr-only">Apple app store</span>
                 </a>
             </li>
         </ul>
@@ -155,14 +227,9 @@
         var x = document.querySelector("header");
 
         x.classList.toggle("header-mobile-open");
-
-
-        // if ((x.style.height === "45px") || (x.style.height === "")) {
-        //     x.style.height = "290px";
-        // } else {
-        //     x.style.height = "45px";
-        // }
     }
+ 
+
 </script>
 </body>
 </html>
