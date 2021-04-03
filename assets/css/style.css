@@ -34,6 +34,14 @@
 
 
 /* ---------------------------------------- EFFECTS */
+@-webkit-keyframes hero-text {
+    from{
+        transform:scale(0.95);
+    }
+    to{
+         transform:scale(1);
+   }
+}
 @keyframes hero-text {
     from{
         transform:scale(0.95);
@@ -44,11 +52,11 @@
 }
 
 
-@keyframes shake {
+@-webkit-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -59,6 +67,35 @@
 
   40%, 60% {
     transform: translate3d(3px, 0, 0);
+  }
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes feature-scale {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
   }
 }
 
@@ -237,7 +274,8 @@ header nav ul li a {
     -o-transition: all 0.3s ease-in-out;
     word-spacing: 4px;
     box-shadow: 10px -5px 40px -10px #000;
-    animation: shake 2s ease-in-out 2s alternate 2 none;
+    -webkit-animation: shake 2s ease-in-out 2s alternate 2 none;
+            animation: shake 2s ease-in-out 2s alternate 2 none;
     /* opacity: .7; */
 }
 
@@ -374,7 +412,8 @@ h3 {
     background-repeat: no-repeat;
 }
 .feature-card-image:hover {
-    animation: feature-scale ease-in-out 1s alternate 2 none;
+    -webkit-animation: feature-scale ease-in-out 1s alternate 2 none;
+            animation: feature-scale ease-in-out 1s alternate 2 none;
 
 }
 .feature-card h3 {
@@ -393,7 +432,7 @@ h3 {
     background-image: url("../images/feature-gt.jpg");
 }
 
-/* 
+/*
 .box {
     display: inline-block;
     vertical-align: top;
@@ -716,7 +755,7 @@ header nav ul li.header-logo {
     display:none;
 }
 
-#header-cta {  
+#header-cta {
     top:160px;
     right:30px;
 }
@@ -801,8 +840,8 @@ footer > .footer-box {
         display:none;
     }
 
-    #header-cta { 
-        display: none; 
+    #header-cta {
+        display: none;
     }
 
     #hero-image {
@@ -820,6 +859,8 @@ footer > .footer-box {
 
     /* ---------------------------------------- MODAL */
     .modal-box {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         width:90%;
         max-width:90%;
@@ -830,8 +871,8 @@ footer > .footer-box {
 
     /* ---------------------------------------- MOBILE FORMS */
 
-    #form-demo-name, #form-demo-phone, #form-demo-email { 
-        width:100%; 
+    #form-demo-name, #form-demo-phone, #form-demo-email {
+        width:100%;
     }
 
     label {
