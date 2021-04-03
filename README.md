@@ -30,7 +30,7 @@ Welcome to ProductionEx, a production software package for Festivals, Theatres a
 
 ### User Stories
 As a user…
-* I want to find out current users of the software
+* I want to hear feedback from current users of the software
 * I want to see reviews for current / past users
 * I want to find examples of prices for a similar size event
 * I want to try a demo before I agree to buy
@@ -54,7 +54,6 @@ To provide a reliable and fast font library, I have used [Google Fonts](https://
 For headings and words I want to stand out I've used the [Lato](https://fonts.google.com/specimen/Lato?preview.text=ProductionEx&preview.text_type=custom "Google fonts: Lato") font. 
 
 For the remaining text I chose the [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=ProductionEx&preview.text_type=custom "Google fonts: Raleway") font.
-
 
 
 
