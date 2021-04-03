@@ -100,6 +100,9 @@
 .text-right {
     text-align: right;
 }
+.text-justify {
+    text-align: justify;
+}
 .text-upper {
     text-transform: uppercase;
 }
@@ -167,8 +170,6 @@ body {
 
 
 
-
-
 /* ---------------------------------------- HEADER */
 
 header {
@@ -213,7 +214,6 @@ header nav ul li {
 header nav ul li a {
     font-family: 'Lato', sans-serif;
     font-size:18px;
-    text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing:200px;
     position:relative;
@@ -280,7 +280,6 @@ header nav ul li a {
     right:0;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
     display:block;
     /* animation-name: hero-text;
     animation-duration: 3s;
@@ -322,6 +321,7 @@ header nav ul li a {
 }
 
 
+
 h2,h3 {
     font-family: 'Lato', sans-serif;
     font-weight:300;
@@ -356,11 +356,13 @@ h3 {
     border:1px solid #ddd;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
     position:relative;
     box-shadow: 0 10px 25px -15px #000;
+    background-image: linear-gradient(150deg, #fff 75% , #ddd);
+
 }
 .feature-card-image {
     width:105%;
@@ -382,11 +384,6 @@ h3 {
 .feature-card p {
     margin:0 10px 20px 10px;
     font-size:14px;
-    font-weight:400;
-    letter-spacing: 0px;
-    word-spacing: 10px;
-    text-align: justify;
-    font-family: 'Lato', sans-serif;
 }
 #feature-card-al .feature-card-image {
     background-image: url("../images/feature-al.jpg");
@@ -635,7 +632,6 @@ label {
     display: inline-block;
     padding:0;
     font-weight:300;
-    text-transform: uppercase;
     position: absolute;
     left:0;
     top:2px;
@@ -768,113 +764,118 @@ footer > .footer-box {
 
 @media only screen and (max-width: 600px) {
 
-header {
-    position: absolute;
-    height:55px;
-    transition: height 1s ease;
+    header {
+        position: absolute;
+        height:55px;
+        transition: height 1s ease;
+    }
 
-}
-
-header.header-mobile-open {
-    height:250px;
-    transition: height 1s ease;
-}
-
-
-header:before {
-    width:280%;
-    left:-90%;
-}
-
-#header-hamburger {
-    display:block;
-    position: relative;
-    top:10px;
-    text-align: center;
-    z-index: 5;
-    font-size: 30px;
-}
+    header.header-mobile-open {
+        height:250px;
+        transition: height 1s ease;
+    }
 
 
-header nav ul li {
-    display: block;
-    width:100%;
-    margin:11px 0;
-}
+    header:before {
+        width:280%;
+        left:-90%;
+    }
 
-header nav ul li.header-logo {
-    display:none;
-}
-
-#header-cta { display: none; }
-
-
-
-#hero-image {
-    background-image: url("../images/bg-mobile.jpg");
-}
-
-#hero-text {
-    /* position: absolute;
-    bottom:30px;
-    left:0;
-    right:0;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    display:block;
-    animation-name: hero-text;
-    animation-duration: 3s;
-    animation-fill-mode: forwards; */
-}
-
-#hero-text h1 {
-    font-size:30px;
-}
-
-#hero-text h2 {
-    font-size:25px;
-}
+    #header-hamburger {
+        display:block;
+        position: relative;
+        top:10px;
+        text-align: center;
+        z-index: 5;
+        font-size: 30px;
+    }
 
 
-#form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
+    header nav ul li {
+        display: block;
+        width:100%;
+        margin:11px 0;
+    }
+
+    header nav ul li.header-logo {
+        display:none;
+    }
+
+    #header-cta { 
+        display: none; 
+    }
+
+    #hero-image {
+        background-image: url("../images/bg-mobile.jpg");
+    }
+
+    #hero-text h1 {
+        font-size:30px;
+    }
+
+    #hero-text h2 {
+        font-size:25px;
+    }
 
 
-.feature-card {
-    width:100%;
-    height:auto;
-    margin:20px 0;
-    
-    border:0;
-    border-radius: 3px;
-    box-shadow: 0 10px 25px -15px #000;
-}
+    /* ---------------------------------------- MODAL */
+    .modal-box {
+        height: fit-content;
+        width:90%;
+        max-width:90%;
+        top:0;
+        left:0;
+        margin:5%;
+    }
+
+    /* ---------------------------------------- MOBILE FORMS */
+
+    #form-demo-name, #form-demo-phone, #form-demo-email { 
+        width:100%; 
+    }
+
+    label {
+        display: block;
+        position: relative;
+        left:0;
+        top:0;
+        width:auto;
+        margin-bottom:10px;
+    }
+    input[type=text], input[type=email] {
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        padding: 0 10px 0 0px;
+    }
+
+    /* ---------------------------------------- MOBILE FEATURES */
+
+    .feature-card {
+        width:100%;
+        height:auto;
+        margin:20px 0;
+        border:0;
+        border-radius: 3px;
+        box-shadow: 0 10px 25px -15px #000;
+    }
 
 
+    /* ---------------------------------------- MOBILE FOOTER */
 
+    footer {
+        padding:50px 10px;
+    }
 
+    footer > .footer-box {
+        width:100%;
+        display:block;
+        margin:0 0 60px 0;
 
+    }
 
-
-
-
-footer {
-    padding:50px 10px;
-}
-
-footer > .footer-box {
-    width:100%;
-    display:block;
-    margin:0 0 60px 0;
-
-}
-
-footer > .footer-box h5 {
-    font-weight:300;
-}
-
-
-
-
+    footer > .footer-box h5 {
+        font-weight:300;
+    }
 
 }

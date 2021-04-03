@@ -7,6 +7,7 @@
     <meta name="Description" content="ProductionEx - World leading production management software for festivals, theatre and other large events">
     <script></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="theme-color" content="#F9440D"/>
 </head>
 <body>
 
@@ -16,19 +17,19 @@
     
         <h3 class="color-dark">Request demo</h3>
 
-        <form action="" >
+        <form method="POST" action="https://formdump.codeinstitute.net/">
 
             <div class="input-block">
                 <label for="form-demo-name" class="color-accent">Your Name</label>
-                <input type="text" id="form-demo-name" name="name" placeholder="John Doe" required>
+                <input type="text" class="form-demo-name" name="name" placeholder="John Doe" required>
             </div>
             <div class="input-block">
                 <label for="form-demo-phone" class="">Phone number</label>
-                <input type="text" id="form-demo-phone" name="phone" placeholder="02920 123456">
+                <input type="text" class="form-demo-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
                 <label for="form-demo-email" class="color-accent">Email address</label>
-                <input type="email" id="form-demo-email" name="email" placeholder="joe.blog@email.com" required>
+                <input type="email" class="form-demo-email" name="email" placeholder="joe.blog@email.com" required>
             </div>
 
             <div class="input-block">
@@ -36,20 +37,20 @@
             </div>
 
             <div class="input-block">
-                <label for="road">Road</label>
-                <input type="radio" id="road" name="running_preference" value="road" required>
+                <label for="road">Festival (Green site)</label>
+                <input type="radio" class="form-demo-radio" name="event-type" value="festival" required>
             </div>
 
             <div class="input-block">
 
-                <label for="trail">Trail</label>
-                <input type="radio" id="trail" name="running_preference" value="trail" required>
+                <label for="trail">Theatre Production</label>
+                <input type="radio" class="form-demo-radio" id="trail" name="event-type" value="theatre" required>
             </div>
 
             <div class="input-block">
 
-                <label for="both">Both</label>
-                <input type="radio" id="both" name="running_preference" value="both" required>
+                <label for="both">Large single day event</label>
+                <input type="radio" class="form-demo-radio" id="both" name="event-type" value="event" required>
             </div>
 
             
@@ -66,11 +67,11 @@
 
     <nav>
         <ul>
-            <li><a href="features.html" class="color-light color-accent-hover">Features</a></li>
-            <li><a href="resources.html" class="color-light color-accent-hover">Resources</a></li>
-            <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50px" height="50px" alt="ProductionEx Logo"></a></li>
-            <li><a href="pricing.html" class="color-light color-accent-hover">Pricing</a></li>
-             <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')">Demo</a></li>
+            <li><a href="features.html" class="color-light color-accent-hover text-upper">Features</a></li>
+            <li><a href="resources.html" class="color-light color-accent-hover text-upper">Resources</a></li>
+            <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
+            <li><a href="pricing.html" class="color-light color-accent-hover text-upper">Pricing</a></li>
+             <li><a href="#" class="color-light color-accent-hover text-upper" onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')">Demo</a></li>
        </ul>
     </nav>
 </header>
@@ -81,10 +82,10 @@
     <button id="header-cta" class="button color-accent color-light-bg color-accent-bg-hover color-light-hover" 
         onclick="document.querySelector('#modal-contact').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Live Demo</button>
     <div id="hero-text">
-        <h1 class="color-light">
+        <h1 class="color-light text-upper">
             Production <span class="color-accent">Ex</span>
         </h1>
-        <h2 class="color-light">Event production software</h2>
+        <h2 class="color-light text-upper">Event production software</h2>
     </div>
 </div>
 
@@ -110,9 +111,9 @@
             <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
         </section>
 
-        <section id="feature-card-al" class="feature-card">
+        <section id="feature-card-aa" class="feature-card">
             <div class="feature-card-image"></div>
-            <h3 class="color-accent text-upper">Artist Liaison</h3>
+            <h3 class="color-accent text-upper">Artist Advancing</h3>
             <p>Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
             <p>Pro.Ex can automatically send emails, reminders, calendar appointments</p>
         </section>
@@ -130,7 +131,7 @@
     <div class="footer-box footer-productionex color-light">
         
         <div class="footer-text-head text-upper color-light">
-            <img src="assets/images/productionex-footer-logo.png" class="footer-logo" height="16px" width="16px" alt="ProductionEx Logo"> Production<span class="color-accent-light">Ex</span></div>
+            <img src="assets/images/productionex-footer-logo.png" class="footer-logo" height="16" width="16" alt="ProductionEx Logo"> Production<span class="color-accent-light">Ex</span></div>
         <p>ProductionEx is a world leading software solution to manage festivals, theatre and other large scale events. Effortlessly manage your artists, guest list, stage times and more.</p>
     </div>
 
