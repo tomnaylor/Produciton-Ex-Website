@@ -98,17 +98,42 @@
 
             <div class="flexbox flexbox-wrap">
 
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/boomtown-logo.png" class="client-logo" width="170" height="102"></a>
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/glastonbury-logo.png" class="client-logo" width="170" height="102"></a>
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/larmer-tree-fest-logo.png" class="client-logo" width="170" height="102"></a>
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/blissfields-logo.png" class="client-logo" width="170" height="102"></a>
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/future-fest-logo.png" class="client-logo" width="170" height="102"></a>
-                <a href="#" class="client-logo"><img src="assets/images/client-logos/pride-cymru-logo.png" class="client-logo" width="170" height="102"></a>
+                <article class="client-logo" id="client-boomtown">
+                    <div class="client-desc color-light modal-hide">
+                        <h1 class="text-upper">Boomtown</h1>
+                        <p class="text-smaller">We joined forces with Boomtown in 2015, Initially to manage their artist advancing site that managed 200+ artists</p>
+                        <p class="text-italic text-smaller">"We were over the moon with the prodex advancing package. We saved countless hours before and during the festival - freeing us up for more important things during the weekend; plenty of visits to the catering tent!" -Mr Boom</p>
+                    </div>
+                </article>
 
+                <article class="client-logo" id="client-glasto">
+                    <div class="client-desc color-light modal-hide">
+                        <h1 class="text-upper">Glastonbury</h1>
+                        <p class="text-smaller">We've been working closley with the John Peel stage at Glastonbury since 2017. ProductionEx looks after all the advancing, artist liaison, travel requirements and more for 40+ artists over the 4 days in Worthy farm.</p>
+                        <p class="text-smaller text-italic">"I saw prodex being used at another festival and wanted to look into how it will hep us. I'm glad I did, we've saved time and limited mistakes since day one. my team has shrunk in recent years and we're still easily managing thanks to all the automated tasks" - D.R. (AL manager)</p>
+                    </div>
+                </article>
+
+                <article class="client-logo" id="client-larmertree">
+                    <div class="client-desc color-light modal-hide">
+                        <h1 class="text-upper">Larmer Tree</h1>
+                        <p class="text-smaller"></p>
+                        <p class="text-smaller text-italic"></p>
+                    </div>
+                </article>
+
+                <article class="client-logo" id="client-pridecymru">
+                    <div class="client-desc color-light modal-hide">
+                        <h1 class="text-upper">Pride Cymru</h1>
+                        <p class="text-smaller">We're proud to work with our local pride festival. We manage all their production requirements with our unique web based apps and mobile friendly data-centric pages for use in the field by all their staff - with no hardware requirements</p>
+                        <p class="text-smaller text-italic"></p>
+                    </div>
+                </article>
+                
             </div>
 
             <p class="text-justify color-light">
-                Click on some of our clients above to find out more about how our partnership helps their event keep up with the growing demands of modern events
+                Hover over some of our clients above to find out more about how our partnership helps their event keep up with the growing demands of modern events
             </p>
         </section>
     </div>
@@ -294,6 +319,19 @@
     }
  
 
+    /* 
+        TOOGLE THE DESCRIPTION FOR EACH CLIENT AS MOUSE HOVERS OVER THE CLIENTS LOGO 
+        WITH HELP FROM https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element 
+    */
+    const element = document.querySelectorAll('.client-logo');
+    element.forEach(function(el){
+        el.addEventListener('mouseenter', function () {
+            this.childNodes[1].classList.remove('modal-hide');
+        });
+        el.addEventListener('mouseleave', function () {
+            this.childNodes[1].classList.add('modal-hide');
+        });
+    });
 </script>
 </body>
 </html>
