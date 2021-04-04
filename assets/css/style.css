@@ -372,23 +372,27 @@ main {
 }
 
 
-.main-section-color-container > .main-section {
-    margin-top:100px;
+.main-section-full {
+    margin:100px 0;
     padding-top:80px;
     padding-bottom:80px;
+    padding:80px calc(50% - 550px);
     position: relative;
+    max-width:100%;
+
 }
 
 .main-section-color-container {
     position: relative;
 }
 
-.main-section-color-container:before {
+.main-section-full:before {
     content:'';
     width:100%;
     height:5px;
     position: absolute;
     top:0px;
+    left:0;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     background: #fff;
@@ -433,7 +437,7 @@ main p {
 
 .flexbox-wrap {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .feature-card {
@@ -473,7 +477,6 @@ main p {
 }
 
 .feature-card p {
-    font-size:14px;
     margin:14px 10px;
     line-height: 1.2em;
 }
@@ -510,7 +513,7 @@ main p {
     z-index:999;
 }
 
-.client-desc h1, .client-desc p  {
+.client-desc h3, .client-desc p  {
     padding:10px;
     margin:0;
 }
@@ -746,6 +749,10 @@ input[type=text], input[type=email] {
     border-radius: 3px;
     position: relative;
 }
+.input-full {
+    width:100%;
+}
+
 label {
     font-family: 'Lato', sans-serif;
     text-align: left;
@@ -754,14 +761,14 @@ label {
     padding:0;
     font-weight:300;
     position: absolute;
-    left:0;
-    top:2px;
+    left:10px;
+    top:0px;
     width:150px;
 }
-input[type=text], input[type=email] {
+input[type=text], input[type=email], textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 1px;
     outline: 0;
     border: none;
@@ -769,6 +776,9 @@ input[type=text], input[type=email] {
     padding: 0 10px 0 160px;
 }
 
+textarea {
+    border:1px solid #aaa;
+}
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ccc;
@@ -784,9 +794,26 @@ input[type=text], input[type=email] {
 }
 
 
+form.main-section-form .input-block {
+    display: inline-block;
+    margin:0 0 50px 0;
+    position: relative;
+    width: 40%;
+}
+form.main-section-form .input-full {
+    width:100%;
+}
+
+
 #form-demo-name { width:100%; }
 #form-demo-phone { width:100%; }
 #form-demo-email { width:100%; }
+
+#form-contact-name { width:100%; }
+#form-contact-festival { width:100%; }
+#form-contact-phone { width:100%; }
+#form-contact-email { width:100%; }
+#form-contact-message { width:100%; height:130px; }
 
 
 /* input:required {
