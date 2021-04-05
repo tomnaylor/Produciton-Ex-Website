@@ -1,14 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.0/css/all.css');
 
+/* ---------------------------------------- CSS RESET & DEFAULTS */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', Times, serif;
+    font-size:16px;
+    background: #fff;
+}
+
+
+
+
 
 /* ---------------------------------------- COLOURS #D96415 #F9440D */
 .color-accent-bg, .color-accent-bg-hover:hover {
     background-color: rgb(252, 80, 27);
 }
 .color-accent, .color-accent-hover:hover {
-    color: #F9440D;
-    color: #d91200;
+    color: rgb(252, 80, 27);
+    /* color: #d91200; */
 }
 .color-accent-light, .color-accent-light-hover:hover {
     color: #f75;
@@ -89,25 +110,6 @@
   }
 }
 
-
-@-webkit-keyframes feature-scale {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 102%;
-  }
-}
-
-
-@keyframes feature-scale {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 102%;
-  }
-}
 
 
 /* ---------------------------------------- SCREEN READERS */
@@ -202,24 +204,20 @@
 }
 
 
-
-/* ---------------------------------------- CSS RESET & DEFAULTS */
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+/* ---------------------------------------- FLEXBOX LAYOUTS */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-a {
-    text-decoration: none;
+.flexbox-wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-body {
-    font-family: 'Raleway', Times, serif;
-    font-size:16px;
-    background: #fff;
-}
 
 
 
@@ -299,12 +297,22 @@ header nav ul li a {
     height:80vh;
     width:100%;
     background-image: url("../images/bg-desktop.jpg");
+    background-color: rgba(252, 80, 27, 1);
     background-size: cover;
     background-position: center -0;
     background-repeat: no-repeat;
     position: relative;
     top:-100px;
     z-index: 1;
+}
+
+#hero-image:before {
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:rgba(252, 80, 27,0.4);
+    z-index:0;
 }
 
 #hero-image:after {
@@ -323,7 +331,7 @@ header nav ul li a {
 
 #hero-text {
     position: absolute;
-    top:190px;
+    top:15vh;
     left:0;
     right:0;
     text-align: center;
@@ -379,7 +387,6 @@ main {
     padding:80px calc(50% - 550px);
     position: relative;
     max-width:100%;
-
 }
 
 .main-section-color-container {
@@ -397,6 +404,12 @@ main {
     border-bottom-right-radius: 50%;
     background: #fff;
     z-index:999;
+}
+
+hr.main-section-hr {
+    margin:80px 30%;
+    border:0;
+    border-top:1px solid #fff;
 }
 
 main h2, main h3 {
@@ -426,66 +439,35 @@ main p {
 
 
 
+
+
 /* ---------------------------------------- FEATURE CARDS */
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.flexbox-wrap {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.feature-card {
-    width:240px;
-    height:400px;
-    margin:0;
+.card {
+    width:220px;
+    margin:10px;
     display:block;
-    border:1px solid #ddd;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 20px;
+    border:2px solid #F9440D;
+    border-radius: 5px;
     overflow: hidden;
     position:relative;
-    box-shadow: 0 10px 25px -15px #000;
-    background-image: linear-gradient(150deg, #fff 75% , #ddd);
+}
+.card > i {
+    font-size:50px;
+    padding-top:20px;
+    display:block;
 }
 
-.feature-card-image {
-    width:105%;
-    height:140px;
-    position: relative;
-    left:-2px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.feature-card-image:hover {
-    -webkit-animation: feature-scale ease-in-out 1s alternate 1 none;
-            animation: feature-scale ease-in-out 1s alternate 2 none;
-
-}
-
-.feature-card h3 {
+.card h3 {
     margin:12px 10px;
 }
 
-.feature-card p {
+.card p {
     margin:14px 10px;
     line-height: 1.2em;
 }
-#feature-card-al .feature-card-image {
-    background-image: url("../images/feature-al.jpg");
-}
 
-#feature-card-gt .feature-card-image {
-    background-image: url("../images/feature-gt.jpg");
+.card-price {
+    border-color:#f7f6e7;
 }
 
 
@@ -847,9 +829,15 @@ form.main-section-form .input-full {
 
 
 
+@media only screen and (max-width: 1099px) {
+    .main-section-full {
+        padding:80px 10px;
+    }
+    .flexbox-wrap {
+        justify-content: center;
+    }
 
-
-
+}
 
 /* ---------------------------------------- TABLET ONLY */
 
@@ -885,6 +873,10 @@ form.main-section-form .input-full {
     #hero-text h2 {
         font-size:30px;
     }
+
+    .client-logo {
+    }
+
 
 
     #form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
@@ -952,7 +944,8 @@ form.main-section-form .input-full {
     }
 
     #hero-text {
-        top:550px;
+        top:auto;
+        bottom:85px;
     }
 
     #hero-text h1 {
@@ -962,7 +955,6 @@ form.main-section-form .input-full {
     #hero-text p {
         font-size:15px;
     }
-
 
 
 
@@ -995,11 +987,19 @@ form.main-section-form .input-full {
         margin-bottom:10px;
     }
 
-    input[type=text], input[type=email] {
+
+    form.main-section-form .input-block {
+        width:100%;
+        
+    }
+    input[type=text], input[type=email],textarea {
         outline: 0;
         border: none;
         border-bottom: 1px solid #aaa;
         padding: 0 10px 0 0px;
+    }
+    textarea {
+        border:1px solid #aaa;
     }
 
     /* ---------------------------------------- MOBILE FEATURES */
