@@ -2,21 +2,24 @@
 
 # **ProductionEx**
 
+
+![Capture](assets/readme/responsive-capture.JPG)
+
 Welcome to ProductionEx, a production software package for Festivals, Theatres and other complex events. We are a leading standard in managing production information for a range of events, from festivals, theatres, large one day city events etc. We collect, validate and deliver timely information, and automate many tasks backstage production tasks.  
 
 <a></a>
-## Table of contents 
-* [Goals](#goals)
+## Table of contents
+* [UX](#ux)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
     * [Site Owners Goals](#site-owners-goals)
-* [UX](#ux)
+* [Design](#design)
     * [Fonts](#fonts)
     * [Icons](#icons)
     * [Colours](#colours)
 
 
-## Goals
+## UX
 
 ### User Goals
 * Sales website to promote theatre/festival production software
@@ -47,7 +50,15 @@ As a user…
 * Promote the product as the industry standard
 * Provide a professional and flawless UX to promote the software itself.
 
-## UX
+## Design
+
+### Original sketch
+I drew an outline sketch with first to get a basic feel of a design. 
+
+### Wireframes
+After the initial sketch, I then moved to Balsamic and created a wireframe for each page over the three responsive sizes (desktop, tablet and mobile). You can view the PDF wireframes by clicking on the below:
+* [Index](assets/readme/wireframe-index.pdf)
+* xxx
 
 ### Fonts
 To provide a reliable and fast font library, I have used [Google Fonts](https://fonts.google.com/ "Google Fonts"), picking two complimentary fonts.
@@ -56,11 +67,8 @@ For headings and words I want to stand out I've used the [Lato](https://fonts.go
 
 For the remaining text I chose the [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=ProductionEx&preview.text_type=custom "Google fonts: Raleway") font.
 
-
-
 ### Icons
 To add a more familiar feel to the website, I have added icons to sit alongside (and sometimes instead of) text links and buttons. I choose the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
-
 
 ### Colours
 ![xxx](https://via.placeholder.com/100/F9440D/fff?text=F9440D)
@@ -70,49 +78,28 @@ To add a more familiar feel to the website, I have added icons to sit alongside 
 
 
 
+## Features
+### Existing Features
 
 
+### Features left to implement
 
 
+## Technologies used
 
+### Languages
+* HTML
+* CSS
+* Javascript
 
+### Libraries
+* Google Fonts (Lato and Raleway)
+* FontAwesome (for icons and brand logos)
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### Tools
+* GitHub
+* GitPod
+* W3C HTML and CSS validators
+* Google Lighthouse
+* Balsamic (Wireframe)
+* Concepts (Initial drawing)
