@@ -6,16 +6,17 @@ Welcome to ProductionEx, a production software package for Festivals, Theatres a
 
 <a></a>
 ## Table of contents 
-* [UX](#ux)
+* [Goals](#goals)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
     * [Site Owners Goals](#site-owners-goals)
+* [UX](#ux)
     * [Fonts](#fonts)
     * [Icons](#icons)
     * [Colours](#colours)
 
 
-## UX
+## Goals
 
 ### User Goals
 * Sales website to promote theatre/festival production software
@@ -46,7 +47,7 @@ As a user…
 * Promote the product as the industry standard
 * Provide a professional and flawless UX to promote the software itself.
 
-
+## UX
 
 ### Fonts
 To provide a reliable and fast font library, I have used [Google Fonts](https://fonts.google.com/ "Google Fonts"), picking two complimentary fonts.
