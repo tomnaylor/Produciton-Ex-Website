@@ -40,14 +40,6 @@ body {
 
 
 /* ---------------------------------------- EFFECTS */
-@-webkit-keyframes hero-text {
-    from{
-        transform:scale(0.95);
-    }
-    to{
-         transform:scale(1);
-   }
-}
 @keyframes hero-text {
     from{
         transform:scale(0.95);
@@ -55,25 +47,6 @@ body {
     to{
          transform:scale(1);
    }
-}
-
-
-@-webkit-keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-3px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(3px, 0, 0);
-  }
 }
 
 @keyframes shake {
@@ -152,30 +125,29 @@ body {
     z-index: 999;
 }
 
-.modal-box {
+.modal-section {
     background-color: rgba(255,255,255,1);
-    height:80vh;
-    width:80vw;
-    max-width:500px;
+    max-width:94vw;
     position: fixed;
-    top:100px;
-    left:100px;
+    top:2vw;
+    left:2vh;
     z-index: 9999;
     border-radius: 10px;
-    padding:40px 20px 20px 20px;
+    padding:20px 30px 30px 30px;
     box-shadow: 0px 0px 40px -10px #000;
 }
 
+.modal-section h3 {
+    margin-bottom:50px;
+}
 .modal-hide {
     display: none;
 }
 
 .modal .button-close {
     position: absolute;
-    right:0;
-    top:0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
+    right:5px;
+    top:5px;
 }
 
 
@@ -243,9 +215,6 @@ header nav ul li a {
     position:relative;
     text-shadow: 0px 0px 5px #000;
     transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
 }
 
 #header-cta {
@@ -254,8 +223,7 @@ header nav ul li a {
     left: 100px;
     bottom:150px;
     box-shadow: 10px -5px 40px -10px #000;
-    -webkit-animation: shake 2s ease-in-out 2s alternate 2 none;
-            animation: shake 2s ease-in-out 2s alternate 2 none;
+    animation: shake 2s ease-in-out 2s alternate 2 none;
 }
 
 
@@ -566,10 +534,6 @@ footer p {
 #footer-socials li a i {
     font-size: 18px;
     transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-
 }
 
 #footer-socials li a i.fa-facebook:hover {
@@ -608,9 +572,6 @@ footer p {
     box-shadow: 0px 0px 20px -10px #000;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .button i.fas {
@@ -640,9 +601,9 @@ label {
     position: absolute;
     left:10px;
     top:0px;
-    width:150px;
+    width:200px;
 }
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], input[type=date], textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1em;
@@ -650,23 +611,14 @@ input[type=text], input[type=email], textarea {
     outline: 0;
     border: none;
     border-bottom: 1px solid #aaa;
-    padding: 0 10px 0 160px;
+    padding: 0 10px 0 210px;
 }
 
 textarea {
     border:1px solid #aaa;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ccc;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #ccc;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #ccc;
-}
-:-moz-placeholder { /* Firefox 18- */
+::placeholder {
   color: #ccc;
 }
 
@@ -680,9 +632,14 @@ form.main-section-form .input-full {
     width:100%;
 }
 
-#form-demo-name { width:100%; }
-#form-demo-phone { width:100%; }
-#form-demo-email { width:100%; }
+#form-signup-name { width:400px; }
+#form-signup-phone { width:450px; }
+#form-signup-email { width:550px; }
+#form-signup-company { width:400px; }
+#form-signup-date { width:400px; }
+#form-signup-address { width:600px; }
+#form-signup-city { width:400px; }
+#form-signup-zip { width:350px; }
 
 #form-contact-name { width:100%; }
 #form-contact-festival { width:100%; }
@@ -723,7 +680,7 @@ form.main-section-form .input-full {
     #hero-image {
         min-height:500px;
         background-image: url("../images/hero-desktop.jpg");
-}
+    }
 
     #hero-text {
         top:130px;
@@ -736,8 +693,6 @@ form.main-section-form .input-full {
     #hero-text h2 {
         font-size:30px;
     }
-
-    #form-demo-name, #form-demo-phone, #form-demo-email { width:100%; }
 
     footer {
         padding:50px 10px;
@@ -799,7 +754,7 @@ form.main-section-form .input-full {
 
     #hero-image {
         background-image: url("../images/hero-desktop.jpg");
-}
+    }
 
     #hero-text {
         top:auto;
@@ -815,26 +770,26 @@ form.main-section-form .input-full {
     }
 
 
+    .card {
+        width:80%;
+    }
 
 
 
 
     /* ---------------------------------------- MODAL */
-    .modal-box {
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
+    .modal-section {
+        max-height:95%;
         width:90%;
         max-width:90%;
+        position: relative;
         top:0;
         left:0;
         margin:5%;
+        overflow: scroll;
     }
 
     /* ---------------------------------------- MOBILE FORMS */
-    #form-demo-name, #form-demo-phone, #form-demo-email {
-        width:100%;
-    }
 
     label {
         display: block;
@@ -850,7 +805,7 @@ form.main-section-form .input-full {
         width:100%;
         
     }
-    input[type=text], input[type=email],textarea {
+    input[type=text], input[type=email],input[type=date],textarea {
         outline: 0;
         border: none;
         border-bottom: 1px solid #aaa;
@@ -860,16 +815,15 @@ form.main-section-form .input-full {
         border:1px solid #aaa;
     }
 
-    /* ---------------------------------------- MOBILE FEATURES */
-
-    .feature-card {
-        width:100%;
-        height:auto;
-        margin:20px 0;
-        border:0;
-        border-radius: 3px;
-        box-shadow: 0 10px 25px -15px #000;
-    }
+    
+    #form-signup-name, 
+    #form-signup-phone, 
+    #form-signup-email, 
+    #form-signup-company, 
+    #form-signup-date, 
+    #form-signup-address, 
+    #form-signup-city, 
+    #form-signup-zip { width:100%; }
 
 
     /* ---------------------------------------- MOBILE FOOTER */

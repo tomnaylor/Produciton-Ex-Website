@@ -22,7 +22,7 @@
             <li><a href="guides.html" class="color-light color-accent-hover text-upper">Guides</a></li>
             <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
             <li><a href="#pricing" class="color-light color-accent-hover text-upper">Pricing</a></li>
-             <li><a href="https://app.productionex.com/login" target="_blank" class="color-light color-accent-hover text-upper">Demo</a></li>
+             <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover text-upper">Demo</a></li>
        </ul>
     </nav>
 </header>
@@ -178,14 +178,6 @@
                     <span class="text-smaller">€269</span>
                 </h3>
                 <p class="color-light text-smaller">Think Bestival size. Circa. 40,000, plenty of production staff and freelancers that need user accounts. 100s of artists to advance and manage</p>
-                <p class="color-light text-center">
-                    <i class="fab fa-apple"></i>
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-aws"></i>
-                    <i class="fab fa-paypal"></i>
-                    <i class="fab fa-slack"></i>
-                    <i class="fab fa-telegram-plane"></i>
-                </p>
             </div>
 
             <div class="card card-price">
@@ -196,14 +188,6 @@
                     <span class="text-smaller">€449</span>
                 </h3>
                 <p class="color-light text-smaller">For the Glastonburys of the world. Manage 100s of staff and volenteers and advance 1000s of artists across multiple sites / stages with intergrations for your own website, communcation tools and more.</p>
-                 <p class="color-light text-center">
-                    <i class="fab fa-apple"></i>
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-aws"></i>
-                    <i class="fab fa-paypal"></i>
-                    <i class="fab fa-slack"></i>
-                    <i class="fab fa-telegram-plane"></i>
-                </p>
            </div>
         </div>
 
@@ -296,7 +280,7 @@
                 <li><a href="#features" class="color-light color-accent-hover">Features</a></li>
                 <li><a href="guides.html" class="color-light color-accent-hover">Resources</a></li>
                 <li><a href="#pricing" class="color-light color-accent-hover">Pricing</a></li>
-                <li><a href="https://app.productionex.com/login" target="_blank" class="color-light color-accent-hover">Demo</a></li>
+                <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover">Demo</a></li>
                 <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')">Sign up</a></li>
                 <li><a href="#" class="color-light color-accent-hover">Accessibility</a></li>
                 <li><a href="#" class="color-light color-accent-hover">T&Cs</a></li>
@@ -373,48 +357,52 @@
 <!-- ********************************************** SIGN UP MODAL POPUP FORM -->
 
 <div id="modal-signup" class="modal modal-hide">
-    <div class="modal-box">
+    <section class="modal-section">
         <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
     
-        <h3 class="color-dark">Sign up</h3>
+        <h3 class="text-upper">Sign up</h3>
 
         <form method="POST" action="https://formdump.codeinstitute.net/">
 
             <div class="input-block">
-                <label for="form-demo-name" class="color-accent">Your Name</label>
-                <input type="text" id="form-demo-name" name="name" placeholder="John Doe" required>
+                <label for="form-signup-name" class="color-accent">Your Name</label>
+                <input type="text" id="form-signup-name" name="name" placeholder="John Doe" required>
             </div>
             <div class="input-block">
-                <label for="form-demo-phone" class="">Phone number</label>
-                <input type="text" id="form-demo-phone" name="phone" placeholder="02920 123456">
+                <label for="form-signup-phone" class="">Phone number</label>
+                <input type="text" id="form-signup-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
-                <label for="form-demo-email" class="color-accent">Email address</label>
-                <input type="email" id="form-demo-email" name="email" placeholder="joe.blog@email.com" required>
+                <label for="form-signup-email" class="color-accent">Email address</label>
+                <input type="email" id="form-signup-email" name="email" placeholder="joe.blog@email.com" required>
             </div>
             <div class="input-block">
-                <label class="color-accent">Event type</label>
+                <label for="form-signup-company" class="color-accent">Legal company name</label>
+                <input type="text" id="form-signup-company" name="company" placeholder="John Doe Ltd." required>
             </div>
             <div class="input-block">
-                <label for="form-demo-festival">Festival (Green site)</label>
-                <input type="radio" id="form-demo-festival" name="event-type" value="festival" required>
+                <label for="form-signup-date" class="color-accent">Festival date</label>
+                <input type="date" id="form-signup-date" name="date" required>
             </div>
             <div class="input-block">
-                <label for="form-demo-theatre">Theatre Production</label>
-                <input type="radio" id="form-demo-theatre" name="event-type" value="theatre" required>
+                <label for="form-signup-address" class="color-accent">Admin address</label>
+                <input type="text" id="form-signup-address" name="address" placeholder="213 swn drive" required>
             </div>
             <div class="input-block">
-                <label for="form-demo-event">Large single day event</label>
-                <input type="radio" id="form-demo-event" name="event-type" value="event" required>
+                <label for="form-signup-city" class="color-accent">City</label>
+                <input type="text" id="form-signup-city" name="city" placeholder="Cardiff" required>
             </div>
-            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-at"></i> Contact Us</button>
+            <div class="input-block">
+                <label for="form-signup-zip" class="color-accent">Zip/Postcode</label>
+                <input type="text" id="form-signup-zip" name="zip" placeholder="CF3 2PU" required>
+            </div>
+            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-sign-in-alt"></i> Signup</button>
         </form>
-    </div>
+    </section>
 </div>
 
 
 <script>
-
     /* HAMBURGER SLIDE DOWN MENU FOR MOBILE VIEW */
     document.getElementById("header-hamburger").onclick = function() {
         var x = document.querySelector("header");
@@ -422,7 +410,6 @@
         x.classList.toggle("header-mobile-open");
     }
  
-
     /* 
         TOOGLE THE DESCRIPTION FOR EACH CLIENT AS MOUSE HOVERS OVER THE CLIENTS LOGO 
         WITH HELP FROM https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element 
