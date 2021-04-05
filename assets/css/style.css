@@ -20,27 +20,16 @@ body {
 }
 
 
-
-
-
 /* ---------------------------------------- COLOURS #D96415 #F9440D */
 .color-accent-bg, .color-accent-bg-hover:hover {
     background-color: rgb(252, 80, 27);
 }
 .color-accent, .color-accent-hover:hover {
     color: rgb(252, 80, 27);
-    /* color: #d91200; */
 }
 .color-accent-light, .color-accent-light-hover:hover {
     color: #f75;
 }
-
-/* .color-accent-dark-bg, .color-accent-dark-bg-hover:hover {
-    background-color: #F9440D;
-}
-.color-accent-dark, .color-accent-dark-hover:hover {
-    color: #F9440D;
-} */
 
 .color-light-bg, .color-light-bg-hover:hover {
     background-color: #f7f6e7;
@@ -48,10 +37,6 @@ body {
 .color-light, .color-light-hover:hover {
     color: #f7f6e7;
 }
-
-
-
-
 
 
 /* ---------------------------------------- EFFECTS */
@@ -91,7 +76,6 @@ body {
   }
 }
 
-
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -111,7 +95,6 @@ body {
 }
 
 
-
 /* ---------------------------------------- SCREEN READERS */
 
 .sr-only {
@@ -122,10 +105,6 @@ body {
     height:1px;
     overflow:hidden;
 }
-
-
-
-
 
 
 /* ---------------------------------------- FORMATTING */
@@ -160,10 +139,6 @@ body {
 .text-pad {
     padding:1px 4px;
 }
-
-
-
-
 
 
 /* ---------------------------------------- MODAL */
@@ -217,8 +192,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 
 
 /* ---------------------------------------- HEADER */
@@ -275,8 +248,6 @@ header nav ul li a {
     -o-transition: color 0.3s ease-in-out;
 }
 
-
-
 #header-cta {
     position:absolute;
     width:200px;
@@ -288,16 +259,13 @@ header nav ul li a {
 }
 
 
-
-
 /* ---------------------------------------- HERO IMAGE */
 
 #hero-image {
     overflow: hidden;
     height:80vh;
     width:100%;
-    background-image: url("../images/bg-desktop.jpg");
-    background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+    background-image: url("../images/hero-desktop.jpg");
     background-color: rgb(255, 110, 37);
     background-size: cover;
     background-position: center -0px;
@@ -307,15 +275,6 @@ header nav ul li a {
     z-index: 1;
     background-blend-mode: luminosity;
 }
-
-/* #hero-image:before {
-    content:'';
-    position: absolute;
-    height:100%;
-    width:100%;
-    background:rgba(255, 90, 27,0.6);
-    z-index:0;
-} */
 
 #hero-image:after {
     content:'';
@@ -362,9 +321,6 @@ header nav ul li a {
 }
 
 
-
-
-
 /* ---------------------------------------- MAIN CONTENT */
 
 main {
@@ -380,7 +336,6 @@ main {
     padding:20px 10px 10px 10px;
     z-index:50;
 }
-
 
 .main-section-full {
     margin:100px 0;
@@ -420,7 +375,6 @@ main h2, main h3 {
     letter-spacing: 1px;
 }
 
-
 main h2 {
     position: relative;
     font-size:40px;
@@ -440,10 +394,8 @@ main p {
 }
 
 
-
-
-
 /* ---------------------------------------- FEATURE CARDS */
+
 .card {
     width:220px;
     margin:10px;
@@ -471,7 +423,6 @@ main p {
 .card-price {
     border-color:#f7f6e7;
 }
-
 
 .client-logo {
     transition: all 0.5s ease-in-out;
@@ -516,7 +467,6 @@ main p {
 }
 
 
-
 /* ---------------------------------------- FOOTER */
 
 footer {
@@ -533,9 +483,7 @@ footer {
     font-weight: 300;
     letter-spacing: 0px;
     word-spacing: 0px;
-
 }
-
 
 footer > .footer-box {
     width:18%;
@@ -553,7 +501,6 @@ footer .footer-text-head {
     font-weight: 500;
 }
 
-
 footer ul.footer-ul {
     list-style: none;
 
@@ -566,17 +513,9 @@ footer ul.footer-ul li {
     position:relative
 }
 
-
-
-
-
 footer .footer-contact-us ul.footer-ul {
     text-align: right;
 }
-
-
-
-
 
 footer .footer-latest-news ul.footer-ul li a {
     margin-left:5px;
@@ -599,13 +538,10 @@ footer ul.footer-ul li.news::before {
     content: "\f1ea";
 }
 
-
 footer .footer-site-info ul.footer-ul li {
     display:inline-block;
     margin: 0 0 25px 25px;
 }
-
-
 
 footer .footer-logo {
     margin-right:10px;
@@ -617,19 +553,15 @@ footer p {
     font-weight: 300;
 }
 
-
-
 #footer-socials {
     margin-top:40px;
     list-style-type: none;
 }
 
-
 #footer-socials li {
     display: inline-block;
     margin: 0 0 10px 15px;
 }
-
 
 #footer-socials li a i {
     font-size: 18px;
@@ -662,11 +594,6 @@ footer p {
 }
 
 
-
-
-
-
-
 /* ---------------------------------------- FORMS */
 
 .button {
@@ -690,40 +617,6 @@ footer p {
     font-size:0.9em;
     vertical-align: 0px;
 }
-
-
-
-/* .input-block {
-    display: inline-block;
-    padding:0;
-    margin:0 50px 50px 0;
-    border:0 dotted #ccc;
-    border-radius: 3px;
-    position: relative;
-}
-label {
-    font-family: 'Lato', sans-serif;
-    text-align: left;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding:0;
-    font-weight:300;
-    text-transform: uppercase;
-    position: absolute;
-    left:0;
-    top:2px;
-    width:150px;
-}
-input[type=text], input[type=email] {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    outline: 0;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    padding: 0 10px 0 160px;
-} */
 
 .input-block {
     display: block;
@@ -777,7 +670,6 @@ textarea {
   color: #ccc;
 }
 
-
 form.main-section-form .input-block {
     display: inline-block;
     margin:0 0 50px 0;
@@ -787,7 +679,6 @@ form.main-section-form .input-block {
 form.main-section-form .input-full {
     width:100%;
 }
-
 
 #form-demo-name { width:100%; }
 #form-demo-phone { width:100%; }
@@ -799,37 +690,7 @@ form.main-section-form .input-full {
 #form-contact-email { width:100%; }
 #form-contact-message { width:100%; height:130px; }
 
-
-/* input:required {
-  border:1px dotted red;
-} */
-
-/**
- * style input elements that have a required
- * attribute and a focus state
- */
-/* input:required:focus {
-  border: 2px solid green;
-  outline: none;
-} */
-
-/**
- * style input elements that have a required
- * attribute and a hover state
- */
-
-
-/* input:invalid:focus {
-  border:1px solid red;
-}input:valid {
-  border: 1px solid green;
-} */
-
-
-
-
-
-
+/* ---------------------------------------- WHEN SCREEN IS SMALLER THAN MIN WIDTH FOR MAIN SECTIONS*/
 
 @media only screen and (max-width: 1099px) {
     .main-section-full {
@@ -861,8 +722,7 @@ form.main-section-form .input-full {
 
     #hero-image {
         min-height:500px;
-        background-image: url("../images/bg-tablet.jpg");
-        background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+        background-image: url("../images/hero-desktop.jpg");
 }
 
     #hero-text {
@@ -938,8 +798,7 @@ form.main-section-form .input-full {
     }
 
     #hero-image {
-        background-image: url("../images/bg-mobile.jpg");
-        background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+        background-image: url("../images/hero-desktop.jpg");
 }
 
     #hero-text {
