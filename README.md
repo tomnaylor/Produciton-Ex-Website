@@ -5,6 +5,9 @@
 
 ![Capture](assets/readme/responsive-capture.JPG)
 
+**View live site** https://tomnaylor.github.io/codeinstitute-ms1/
+
+
 Welcome to ProductionEx, a production software package for Festivals, Theatres and other complex events. We are a leading standard in managing production information for a range of events, from festivals, theatres, large one day city events etc. We collect, validate and deliver timely information, and automate many tasks backstage production tasks.  
 
 <a></a>
@@ -48,17 +51,17 @@ As a user…
 ### Site Owners Goals
 * Advertise their software to potential theatres / festivals and other events
 * Promote the product as the industry standard
-* Provide a professional and flawless UX to promote the software itself.
+* Provide a professional and flawless UX to promote confidance in the software itself.
 
 ## Design
 
 ### Original sketch
 I drew an outline sketch with first to get a basic feel of a design. 
+![Concepts sketch](assets/readme/concepts-sketch.jpg)
+
 
 ### Wireframes
-After the initial sketch, I then moved to Balsamic and created a wireframe for each page over the three responsive sizes (desktop, tablet and mobile). You can view the PDF wireframes by clicking on the below:
-* [Index](assets/readme/wireframe-index.pdf)
-* xxx
+After the initial sketch, I then moved to Balsamic and created a wireframe for the three responsive sizes (desktop, tablet and mobile). You can [view the PDF wireframe here](assets/readme/wireframe-index.pdf)
 
 ### Fonts
 To provide a reliable and fast font library, I have used [Google Fonts](https://fonts.google.com/ "Google Fonts"), picking two complimentary fonts.
@@ -71,10 +74,15 @@ For the remaining text I chose the [Raleway](https://fonts.google.com/specimen/R
 To add a more familiar feel to the website, I have added icons to sit alongside (and sometimes instead of) text links and buttons. I choose the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
 
 ### Colours
-![xxx](https://via.placeholder.com/100/F9440D/fff?text=F9440D)
-![xxx](https://via.placeholder.com/100/d91200/fff?text=d91200)
-![xxx](https://via.placeholder.com/100/ff7755/fff?text=ff7755)
-![xxx](https://via.placeholder.com/100/f7f6e7/fff?text=f7f6e7)
+![Accent](https://via.placeholder.com/100/F9440D/fff?text=F9440D)
+![Accent light](https://via.placeholder.com/100/ff7755/fff?text=ff7755)
+![Light](https://via.placeholder.com/100/f7f6e7/fff?text=f7f6e7)
+
+### Hero image
+I used the website **unsplash** to find an image that would work as the hero background.
+
+![Hero image](https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)
+https://unsplash.com/photos/NYrVisodQ2M
 
 
 
@@ -103,3 +111,41 @@ To add a more familiar feel to the website, I have added icons to sit alongside 
 * Google Lighthouse
 * Balsamic (Wireframe)
 * Concepts (Initial drawing)
+
+## Testing
+
+### Discovered Bugs
+
+#### Solved
+
+* **Sign up button**
+  * Sign-up button would move below hero image and disapeer behind the main section in mobile devices.
+  * To fix the issue I changed the position to use bottom and not top to ensure that whatever the height of the hero image, the CTA stayed 100px from the bottom.
+
+* **Hover client logo**
+  * The popup description would open and close quickly as the mouse moved over the client logo container.
+  * Changed onmouseover to two seperate calls to mouseenter and mouseleave so the javascript function wasn't trigged on every mouse move.
+
+* **Multiple client logos**
+  * The popup description would only open on the first container.
+  * With help from [Mamun](https://stackoverflow.com/users/7461381/mamun) in [this post](https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element) I altered the javascript to loop thru each matching query.
+
+
+* **Main nav items**
+  * When the screen size reduced to circa. 750px, the top navigation links crashed into each other
+  * In the tablet only CSS I removed the centre logo to give the menu items more space
+
+* **Videos slowed page loads**
+  * Adding the video guides reduced the lighthouse score as each video (x3) preloaded.
+  * I added the preload="none" to each video and then to make them visually appealing, I added a poster image to show before playing the media.
+
+* **Sign-up modal**
+  * On mobile devices with small height screens the fixed position modal wasn't able to be scrolled. This ment that most of the form inputs were not accessable
+  * Changed the height to 100% and removed the bottom and right css entries to allow the box to expand to show all the contents.
+
+* **Transitions**
+  * All transitions happened on page load (which started from the non styled state)
+  * This seems to be a big with the chrome browser. I used advice on [this page](https://github.com/LeaVerou/prefixfree/issues/99) and added an empty script tag at the bottom of the body. This seems to have stopped the issue for me.
+
+
+

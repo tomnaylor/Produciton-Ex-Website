@@ -196,7 +196,7 @@ header:before {
 header nav ul {
     list-style: none;
     position: relative;
-    top:25px;
+    top:20px;
     text-align: center;
     z-index: 5;
 }
@@ -228,6 +228,7 @@ header nav ul li a {
 
 
 /* ---------------------------------------- HERO IMAGE */
+/* Image from https://unsplash.com/@yvettedewit */
 
 #hero-image {
     overflow: hidden;
