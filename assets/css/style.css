@@ -221,7 +221,7 @@ header nav ul li a {
     position:absolute;
     width:200px;
     left: calc(50% - 100px);
-    bottom:400px;
+    bottom:100px;
     box-shadow: 10px -5px 40px -10px #000;
     animation: shake 2s ease-in-out 2s alternate 2 none;
 }
@@ -233,7 +233,7 @@ header nav ul li a {
     overflow: hidden;
     height:80vh;
     width:100%;
-    background-image: url("../images/hero-desktop.jpg");
+    background-image: url("../images/hero-1920.jpg");
     background-color: rgb(255, 110, 37);
     background-size: cover;
     background-position: center -0px;
@@ -680,14 +680,9 @@ form.main-section-form .input-full {
         display:none;
     }
 
-    #header-cta {
-        bottom:110px;
-        left:70px;
-    }
-
     #hero-image {
         min-height:500px;
-        background-image: url("../images/hero-desktop.jpg");
+        background-image: url("../images/hero-768.jpg");
     }
 
     #hero-text {
@@ -698,8 +693,8 @@ form.main-section-form .input-full {
         font-size:45px;
     }
 
-    #hero-text h2 {
-        font-size:30px;
+    #hero-text p { 
+        font-size:21px;
     }
 
     footer {
@@ -761,7 +756,7 @@ form.main-section-form .input-full {
     }
 
     #hero-image {
-        background-image: url("../images/hero-desktop.jpg");
+        background-image: url("../images/hero-600.jpg");
     }
 
     #hero-text {
@@ -779,6 +774,14 @@ form.main-section-form .input-full {
 
     .card {
         width:80%;
+    }
+    .card.card-video {
+        width:80%;
+    }
+    .card.card-video video {
+        width:100%;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
     }
 
     /* ---------------------------------------- MODAL */
