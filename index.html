@@ -11,23 +11,22 @@
 </head>
 <body>
 
+<!-- ********************************************** HEADER WITH NAV SECTION -->
 
 <header>
- 
     <span id="header-hamburger" class="color-light"><i class="fas fa-hamburger"></i></span>
-
     <nav>
         <ul>
             <li><a href="#features" class="color-light color-accent-hover text-upper">Features</a></li>
-            <li><a href="guides.html" class="color-light color-accent-hover text-upper">Guides</a></li>
-            <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
             <li><a href="#pricing" class="color-light color-accent-hover text-upper">Pricing</a></li>
-             <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover text-upper">Demo</a></li>
+            <li class="header-logo"><a href="/"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
+            <li><a href="#guides" class="color-light color-accent-hover text-upper">Guides</a></li>
+            <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover text-upper">Demo</a></li>
        </ul>
     </nav>
 </header>
 
-
+<!-- ********************************************** HERO IMAGE CONTAINER -->
 
 <div id="hero-image">
     <button id="header-cta" class="button color-accent color-light-bg color-accent-bg-hover color-light-hover" 
@@ -41,7 +40,7 @@
     </div>
 </div>
 
-
+<!-- ********************************************** MAIN PAGE CONTENT -->
 
 <main>
 
@@ -86,7 +85,8 @@
         </div>
     </section>
 
-    <hr class="main-section-hr">
+    <hr class="main-section-hr color-accent-bg">
+
     <div class="text-center">
         <button class="button color-light color-accent-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Sign up</button>
     </div>
@@ -138,10 +138,9 @@
         <p class="text-justify color-light">
             Hover over some of our clients above to find out more about how our partnership helps their event keep up with the growing demands of modern events
         </p>
-
         
         <!-- ********************************************** PRICING SECTION -->
-        <hr class="main-section-hr">
+        <hr class="main-section-hr color-light-bg">
 
         <h2 class="color-light text-center text-upper" id="pricing">Pricing</h2>
 
@@ -191,17 +190,58 @@
            </div>
         </div>
 
+        <hr class="main-section-hr color-light-bg">
 
-        <hr class="main-section-hr">
         <div class="text-center">
             <button class="button color-accent color-light-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Sign up</button>
         </div>
-
     </section>
 
-    <!-- ********************************************** CONTACT FORM SECTION -->
+    <!-- ********************************************** GUIDES SECTION -->
 
     <section class="main-section">
+        <h2 class="color-accent text-center text-upper" id="guides">Guides</h2>
+
+        <p class="text-justify">
+            ProductionEx is used worldwide as a reliable, easy to use, and automated tool to manage the workflow for your event; Anywhere and anysize. A true solution for large festivals, theatre productions and other complex events. We are commited to being a leading standard and collate, validate and deliver timely information, and automate many backstage tasks.  
+        </p>
+
+        <div class="flexbox flexbox-wrap">
+                        
+            <div class="card card-video">
+                <video width="300" controls src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/pool-video.mp4">
+                    <p>Sorry, you're browser doesn't support HTML5 video</p>
+                </video>
+                <h3 class="color-accent text-upper text-center">Adding an artist</h3>
+                <p class="text-smaller">Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+                <p class="text-smaller">Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+            </div>
+
+            <div class="card card-video">
+                <video width="300" controls src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/pool-video.mp4">
+                    <p>Sorry, you're browser doesn't support HTML5 video</p>
+                </video>
+                <h3 class="color-accent text-upper text-center">Creating a stage</h3>
+                <p class="text-smaller">Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+                <p class="text-smaller">Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+            </div>
+
+            <div class="card card-video">
+                <video width="300" controls src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/pool-video.mp4">
+                    <p>Sorry, you're browser doesn't support HTML5 video</p>
+                </video>
+                <h3 class="color-accent text-upper text-center">Mail merge template</h3>
+                <p class="text-smaller">Automate artist advance submissions, contracts, accreditation, riders, guest lists and more.</p>
+                <p class="text-smaller">Pro.Ex can automatically send emails, reminders, calendar appointments</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="main-section-hr color-accent-bg">
+
+    <!-- ********************************************** CONTACT FORM SECTION -->
+    <section class="main-section">
+
         <h2 class="color-accent text-center text-upper">Contact Us</h2>
 
         <p class="text-justify">
@@ -236,9 +276,6 @@
 
 </main>
 
-
-
-
 <!-- ********************************************** FOOTER -->
 
 <footer>
@@ -248,6 +285,8 @@
             <img src="assets/images/productionex-footer-logo.png" class="footer-logo" height="16" width="16" alt="ProductionEx Logo"> Production <span class="color-accent-light">Ex</span></div>
         <p>ProductionEx is a world leading software solution to manage festivals, theatre and other large scale events. Effortlessly manage your artists, guest list, stage times and more.</p>
     </div>
+
+    <!-- ********************************************** FOOTER NEWS STORIES -->
 
     <div class="footer-box footer-latest-news color-light">
         <div class="footer-text-head text-upper color-light">Latest <span class="color-accent-light">Media</span></div>
@@ -271,15 +310,16 @@
         </ul>
     </div>
 
+    <!-- ********************************************** FOOTER SITE MAP LINKS -->
 
     <div class="footer-box footer-site-info text-right">
         <div class="footer-text-head text-upper color-light">Site <span class="color-accent-light">Info</span></div>
         <nav>
             <ul class="footer-ul">
-                <li><a href="index.html" class="color-light color-accent-hover">Home</a></li>
+                <li><a href="/" class="color-light color-accent-hover">Home</a></li>
                 <li><a href="#features" class="color-light color-accent-hover">Features</a></li>
-                <li><a href="guides.html" class="color-light color-accent-hover">Resources</a></li>
                 <li><a href="#pricing" class="color-light color-accent-hover">Pricing</a></li>
+                <li><a href="#guides" class="color-light color-accent-hover">Guides</a></li>
                 <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover">Demo</a></li>
                 <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')">Sign up</a></li>
                 <li><a href="#" class="color-light color-accent-hover">Accessibility</a></li>
@@ -290,11 +330,10 @@
         </nav>
     </div>
 
+    <!-- ********************************************** FOOTER CONTACT DETAILS -->
 
     <div class="footer-box footer-contact-us text-right">
-
         <div class="footer-text-head text-upper color-light">Contact <span class="color-accent-light">Us</span></div>
-
         <ul class="footer-ul">
             <li>
                 <a href="#" class="color-light color-accent-light-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')">Sign up</a>
@@ -311,11 +350,12 @@
                 <a href="tel:004930901922" class="color-light color-accent-light-hover">+49 30 901922</a>
                 <span class="color-accent-light">DE</span>
             </li>
-
             <li class="color-light email">
                 <a href="mailto:info@productionex.co.uk" class="color-light color-accent-light-hover">info@productionex.co.uk</a>
             </li>
         </ul>
+
+        <!-- ********************************************** FOOTER SOCIAL LINKS -->
 
         <ul id="footer-socials">
             <li>
@@ -351,7 +391,6 @@
         </ul>
     </div>
 </footer>
-
 
 
 <!-- ********************************************** SIGN UP MODAL POPUP FORM -->
