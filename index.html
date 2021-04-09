@@ -22,7 +22,7 @@
             <li><a href="#pricing" class="color-light color-accent-hover text-upper">Pricing</a></li>
             <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
             <li><a href="#guides" class="color-light color-accent-hover text-upper">Guides</a></li>
-            <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover text-upper">Demo</a></li>
+            <li><a href="#" class="color-light color-accent-hover text-upper" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')">Demo</a></li>
        </ul>
     </nav>
 </header>
@@ -258,7 +258,7 @@
             </div>
             <div class="input-block">
                 <label for="form-contact-phone" class="">Phone number</label>
-                <input type="tel" id="form-contact-phone" name="phone" placeholder="02920 123456">
+                <input type="tel" pattern="^[0-9-+\s()]*$" id="form-contact-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
                 <label for="form-contact-email"><span class="color-accent text-bold">*</span> Email address</label>
@@ -318,7 +318,7 @@
                 <li><a href="#features" class="color-light color-accent-hover">Features</a></li>
                 <li><a href="#pricing" class="color-light color-accent-hover">Pricing</a></li>
                 <li><a href="#guides" class="color-light color-accent-hover">Guides</a></li>
-                <li><a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-light color-accent-hover">Demo</a></li>
+                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')">Demo</a></li>
                 <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')">Sign up</a></li>
                 <li><a href="#" class="color-light color-accent-hover">Accessibility</a></li>
                 <li><a href="#" class="color-light color-accent-hover">T&Cs</a></li>
@@ -392,7 +392,10 @@
 
 
 <!-- ********************************************** SIGN UP MODAL POPUP FORM -->
-
+<!-- 
+    phone validation pattern taken from 
+    https://martinwolf.org/before-2018/blog/2015/04/html5-telephone-input-validation/    
+-->
 <div id="modal-signup" class="modal modal-hide">
     <section class="modal-section">
         <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
@@ -407,7 +410,7 @@
             </div>
             <div class="input-block">
                 <label for="form-signup-phone" class="">Phone number</label>
-                <input type="tel" id="form-signup-phone" name="phone" placeholder="02920 123456">
+                <input type="tel" pattern="^[0-9-+\s()]*$" id="form-signup-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
                 <label for="form-signup-email"><span class="color-accent text-bold">*</span> Email address</label>
@@ -435,6 +438,25 @@
             </div>
             <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-sign-in-alt"></i> Signup</button>
         </form>
+    </section>
+</div>
+
+
+<!-- ********************************************** DEMO MODAL POPUP -->
+<div id="modal-demo" class="modal modal-hide">
+    <section class="modal-section">
+        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
+    
+        <h3 class="text-upper">Demo</h3>
+        <p>We have supplied a running demo for the software for appraisal. To log in to the demo please use the details below. All emails, alerts and communcation options have been removed</p>
+        <p>Please note this is an open demo and any information could be removed / viewed at any time by third parties. Please do not enter actual data in this demo.</p>
+        <p>If you require a more bespoke demo, please contact us via the links provided or fill in our contact form.</p>
+        <p>
+            <span class="text-bold">Username:</span> demo.user<br>
+            <span class="text-bold">Password:</span> demopass<br>
+            <span class="text-bold">Code:</span> demo<br>
+            <span class="text-bold">URL:</span> <a href="https://app.productionex.com/login" target="_blank" rel="noreferrer" class="color-accent">https://app.productionex.com/login</a><br>
+        </p>
     </section>
 </div>
 

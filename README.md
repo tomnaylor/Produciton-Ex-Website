@@ -160,32 +160,30 @@ The footer provides a "most recent" list of news / guides / papers etc to highli
 
 
 ## Testing
-* I want to hear feedback from current users of the software
-* I want to find examples of prices for a similar size event
-* I want to try a demo before I agree to buy
-* I want a quick way to sign up
-* I want to view some how-to videos / guides
-* I want to easily get in touch if I have any questions
-* I want to know how resilient the software is and how it works on a green-field festival site
-* I want to feel assured that the software will be supported for years to come
-* I want the website to work flawlessly, as proof of the software itself
 
 ### Manual Testing
 I have preformed manual tests on a number of browsers and devices to cover most scenarious and feel assured the website works as intended for all visitors. This included using google dev tools to simulate different screen sizes and using a real android and apple phone.
 
-#### Navigation across platforms
+#### Navigation menu
 I want the navigation items to have a margin around them so they stand apart; the internal links to scroll smoothly to the corresponding section; and on mobile the menu to slide out of view behing a hanburger icon.
 
 I tested the navigation on mobile with chrome and safari and on desktop with chrome, edge and firefox, also using the browsers developer tools. The navigation in desktop and mobile views worked across all the devices although the scroll speed seems to differ slightly.
 
 #### Current user testimonials
-I wanted to give feedback and information on current clients but not take up too much space on scree. For this reason I choose to use a popup when the user hovered over the clients logo. To do this I 
+I wanted to give feedback and information on current clients but not take up too much space on scree. For this reason I choose to use a popup when the user hovered over the clients logo. To do this I first tried a mouseover javascript trigger. When tested the popup text toggled on and off everytime the mouse moved. The intended outcome was for the text to appear when you entered the logo box and hide again once you've left the text description.
 
-#### Sign up form
+To achieve this I used a mouseenter event to open it and a mouse leave to close the popup. This worked, but only on the first client. I used [this advice](https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element) to adapt the code to work for each client.
 
-#### Contact form
+#### Sign up and contact forms
+The UX of the form was tested across the devices above, which included the styling of the placeholder text and the position of the lable relative to the input element. All browsers and devices rendered the form in the expected way.
 
-#### Video guides
+Both forms were tested across the browsers and devices:
+
+* Required inputs were left empty to check if the form could be submitted.
+* Email, phone and date inputs were tested with invalid entries.
+* Valid form submitted to check the method and action are correct.
+
+All form imputs worked as expected, the form did not submit when required inputs were empty, but the phone input allowed any character. I used the regex pattern option taken from [this site](https://martinwolf.org/before-2018/blog/2015/04/html5-telephone-input-validation/) to validate the input.
 
 
 ### Discovered Bugs
@@ -225,14 +223,41 @@ I wanted to give feedback and information on current clients but not take up too
 * **favicon** 
     * Developer tools report a 404 file missing for favicon.ico I hav't yet implemented an icon for the site.
 
+* **Phone number format**
+    * The form input for phone number allowed any text entry.
+    * I used a regex pattern taken from [this page](https://martinwolf.org/before-2018/blog/2015/04/html5-telephone-input-validation/) to validate the input
 
 ## Deployment
+The final website has been deployed to github via their pages option. Written in gitpod, after each commit and push, the master branch on github was updated with the local commit. My normal workflow would include
+* git pull if not working with the most up-to-date fields
+* git commit with a useful comment
+* git push to sync with github  
+
+The URL for the github page is https://tomnaylor.github.io/codeinstitute-ms1/
+
+### Running a local copy
+If you would like to run a local copy of this website, you would simply need to clone the master git repo. There are no servers to configure, the website uses only HTML, CSS and Javascript.
 
 
 ## Credits
 
 ### Content
 
+* Javascript help with looping thru elements from [stackoverflow](https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element)
+* Javascript to stop mouseover toggling the client text from [stackoverflow](https://stackoverflow.com/questions/43379883/onmouseover-eventlistener-onto-all-children)
+* How to target a class or ID using javascript written by [Melanie Phillips](https://medium.com/@melaniecp), found [in this article](https://medium.com/@melaniecp/how-to-target-an-html-class-or-id-with-javascript-1f360a4a0310)
+* Telephone validation pattern taken from [Martin Wolf](https://martinwolf.org/) on their [blog post](https://martinwolf.org/before-2018/blog/2015/04/html5-telephone-input-validation/)   
+* Help with a screen reader class from [webaim](https://webaim.org/techniques/css/invisiblecontent/)
+* CSS to shake the CTA button, help from [Sarah Drasner](https://css-tricks.com/author/sdrasner/) from css-tricks [here](https://css-tricks.com/snippets/css/shake-css-keyframe-animation/)
+
 ### Media
 
+* Hero image was taken by [Yvette de Wit](https://unsplash.com/@yvettedewit) seen [here](https://unsplash.com/photos/NYrVisodQ2M)
+
 ### Acknowledgements
+
+The inspiration behind this website was based on work i've done in the past. Currently I work in theatre, and while we might be currently dark, it is an insiring sector to work in. I'd like to build software that takes advantage of what I know and would very much like to release a project like this in the future.
+
+I'd like to thank my mentor [Caleb Mbakwe](https://github.com/caleboau2012), who really helped define the project goals and helped put myself in both the user and the owners shoes. After each session I would have a list of topics to look at or suggestions for changes.
+
+I would also like to thank the Slack community and CyC group for helping the course feel less "remote" and my partner that has needed to do ever more work around me.
