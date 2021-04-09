@@ -8,7 +8,9 @@
 **View live site** https://tomnaylor.github.io/codeinstitute-ms1/
 
 
-Welcome to ProductionEx, a production software package for Festivals, Theatres and other complex events. We are a leading standard in managing production information for a range of events, from festivals, theatres, large one day city events etc. We collect, validate and deliver timely information, and automate many tasks backstage production tasks.  
+Welcome to ProductionEx, a production software package for Festivals, Theatres and other complex events. We are a leading standard in managing production information for a range of events, from Glastonbury festival to the stage production of mirror cracked. We collate, validate and deliver timely information, and automate many tasks backstage production tasks.  
+
+For my MS1, I wanted to create a front-end sales website for a web app I designed for a festival my work host bi-annually.
 
 <a></a>
 ## Table of contents
