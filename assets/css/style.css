@@ -612,7 +612,7 @@ label {
     top:0px;
     width:200px;
 }
-input[type=text], input[type=email], input[type=date], textarea {
+input[type=text], input[type=email], input[type=tel], input[type=date], textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1em;
@@ -815,7 +815,7 @@ form.main-section-form .input-full {
         width:100%;
         
     }
-    input[type=text], input[type=email],input[type=date],textarea {
+    input[type=text], input[type=email], input[type=tel],input[type=date],textarea {
         outline: 0;
         border: none;
         border-bottom: 1px solid #aaa;

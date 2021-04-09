@@ -5,102 +5,146 @@
 
 ![Capture](assets/readme/responsive-capture.JPG)
 
-**View live site** https://tomnaylor.github.io/codeinstitute-ms1/
+**View live site:** https://tomnaylor.github.io/codeinstitute-ms1/
 
 
 Welcome to ProductionEx, a production software package for Festivals, Theatres and other complex events. We are a leading standard in managing production information for a range of events, from Glastonbury festival to the stage production of mirror cracked. We collate, validate and deliver timely information, and automate many tasks backstage production tasks.  
 
-For my MS1, I wanted to create a front-end sales website for a web app I designed for a festival my work host bi-annually.
+For my MS1, I wanted to create a front-end sales website for a web app I designed for a festival my employer host bi-annually. The website is aimed as a sales tool to provide details, exmaples, prices and user stories to the potential client before they get in touch to enquire about their specific needs.
 
-<a></a>
+
 ## Table of contents
 * [UX](#ux)
-    * [User Goals](#user-goals)
     * [User Stories](#user-stories)
     * [Site Owners Goals](#site-owners-goals)
-* [Design](#design)
-    * [Fonts](#fonts)
-    * [Icons](#icons)
-    * [Colours](#colours)
-
+    * [Design](#design)
+        * [Original sketch](#original-sketch)
+        * [Wireframes](#wireframes)
+        * [Fonts](#font-family)
+        * [Icons](#icons)
+        * [Colours](#colours)
+        * [Hero image](#hero-image)
+* [Features](#features)
+    * [Existing Features](#existing-features)
+        * [Navigation](#navigation)
+        * [Hero Image](#hero-image)
+        * [Sign up buttons](#sign-up-buttons)
+        * [Sign up modal](#sign-up-modal)
+        * [Features Section](#features-section)
+        * [Success stories](#success-stories)
+        * [Pricing](#pricing)
+        * [Guides](#guides)
+        * [Contact Us](#contact-us)
+        * [Footer](#footer)
 
 ## UX
-
-### User Goals
-* Sales website to promote theatre/festival production software
-* Website should work across mobile/tablet and desktop
-* Professional and confident design
-* Pages to include use cases/faq/sales/demo
-* Call to action for a demo request
-* Demo request and contact details should be visible and easy to find
-* Provide testimonials and white papers (look up b2b notes)
-* Provide comprehensive how-to videos and written guides
-
 
 ### User Stories
 As a user…
 * I want to hear feedback from current users of the software
-* I want to see reviews for current / past users
 * I want to find examples of prices for a similar size event
 * I want to try a demo before I agree to buy
-* I want to view some how-to videos  / guides
-* I want to know what software / hardware I may need
+* I want a quick way to sign up
+* I want to view some how-to videos / guides
+* I want to easily get in touch if I have any questions
 * I want to know how resilient the software is and how it works on a green-field festival site
 * I want to feel assured that the software will be supported for years to come
-* I expect the website to work flawlessly as proof of the software itself
-
+* I want the website to work flawlessly, as proof of the software itself
 
 ### Site Owners Goals
-* Advertise their software to potential theatres / festivals and other events
+* Sales website to promote a theatre and festival production software application
+* Website should work across mobile, tablet and desktop
+* Professional and confident design
+* Pages to include use cases, example prices, demos and guides for existing users
+* Call to action for sign up in multiple places
+* Demo request and contact details should be visible and easy to find
+* Provide testimonials from other clients (look up b2b notes)
+* Provide comprehensive how-to videos and written guides
 * Promote the product as the industry standard
 * Provide a professional and flawless UX to promote confidance in the software itself.
 
-## Design
 
-### Original sketch
+### Design
+
+#### Original sketch
 I drew an outline sketch first to get a basic feel of a design. 
 ![Concepts sketch](assets/readme/concepts-sketch.jpg)
 
-
-### Wireframes
+#### Wireframes
 After the initial sketch, I then moved to Balsamic and created a wireframe for the three responsive sizes (desktop, tablet and mobile). You can [view the PDF wireframe here](assets/readme/wireframe-index.pdf)
 
-### Fonts
+#### Font family
 To provide a reliable and fast font library, I have used [Google Fonts](https://fonts.google.com/ "Google Fonts"), picking two complimentary fonts.
 
 For headings and words I want to stand out I've used the [Lato](https://fonts.google.com/specimen/Lato?preview.text=ProductionEx&preview.text_type=custom "Google fonts: Lato") font. 
 
 For the remaining text I chose the [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=ProductionEx&preview.text_type=custom "Google fonts: Raleway") font.
 
-### Icons
+#### Icons
 To add a more familiar feel to the website, I have added icons to sit alongside (and sometimes instead of) text links and buttons. I choose the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
 
-### Colours
+#### Colours
 ![Accent](https://via.placeholder.com/100/F9440D/fff?text=F9440D)
 ![Accent light](https://via.placeholder.com/100/ff7755/fff?text=ff7755)
 ![Light](https://via.placeholder.com/100/f7f6e7/fff?text=f7f6e7)
 
-### Hero image
+#### Hero image
 I used the website **unsplash** to find an image that would work as the hero background.
 
 ![Hero image](https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)
 https://unsplash.com/photos/NYrVisodQ2M
 
 
-
 ## Features
+
 ### Existing Features
 
+#### Navigation
+I have tried to make a intuative, accessable and reactive navigation bar that stays useful across different screen sizes and devices. For desktop the navigation has at its centre the logo which also acts as the home link. On Table the logo hides to leave space for the actual links, and on mobile the entire menu is hidden and a hamburger icon provides a button to toggle the menu on and off.
+
+#### Hero Image
+I have used a hero image that spans the width of the viewport and 80% of the height. It includes a curved bottom and also hosts the h1 heading, tag line and a call to action button. The image URL changes as the screen size reduces to make downloading the image quicker on mobile and tablet devices.
+
+#### Sign up buttons
+The sign up buttons are see throught the site as the main call to action (and the end goal for the website). The buttons and text link in the footer all trigger the sign up form modal and use javascript to add / remove a class to hide the form when not needed.
+
+#### Sign up modal
+This is designed to sit on top of the page when the user clicks on the sign up buttons seen across the site. There is a semi-transparent background that covers the site behind the modal itself. The form has some elements that are required and some that are not. There are text, date, phone, email and textarea inputs. Required fields also have a small asterix to highlight they are needed. Simple html form validation is also used for required inputs.
+
+#### Features Section
+The features section is designed to give a quick outline of some of the capabilities of the software. I split them up into 3 common headings for the industry and include a short description for how the software can improve each area. On smaller screens these stack under each other to maintain their width. On mobile they change to 80% fixed width.
+
+#### Success stories
+The client logos share the same size as the feature cards above. However these boxes have a fixed height and a logo as the background (as a transparent PNG). When you hover over each logo you get a description of the client relationship, what they use the software for and a review from the client themselves. Javascript was used to create the mouseover effect.
+
+#### Pricing
+The pricing boxes again share the same size as the above but like the features section they arn't fixed heights. They include an increasing battery icon to convay the scope of the requirements, an example price and an example description of the type of event that would need that degree of administration.
+
+#### Guides
+Guides work in two ways. As a prospective client they show off the software and how easy it is to use. Additionaly, as a current user it keeps them visiting the website for helpful tips and guides on new features or as training for new staff on how to use the system.
+
+#### Contact Us
+I wanted to have a contact section at the bottom of the page as a means to get quick correspondance from the visitor with the aim to push sales. The form is delibratley simple with only a few fields to make sure there are few barriors to asking about the software.
+
+#### Footer
+The footer provides a "most recent" list of news / guides / papers etc to highlight whats new on the system. It also provides a sitemap with other links (aka. terms etc.) that arn't important to put on the main site navigation. There is also a contacts section with international phone numbers, email and social links across various platforms.
 
 ### Features left to implement
+* White papers and blog posts that backup knowledge of the sector
+* Interviews with users on location to prove real-world reliability
+* Automated tool to calculate price based on a selection of features
+* Feature to dynamically highlight where you are on the page by altering the class of the respective link and stick main nav to the top of the viewport.
 
 
 ## Technologies used
 
 ### Languages
 * HTML
+    * HTML is used as the markup language in a single index.html file
 * CSS
+    * A single CSS file style.css is used for all screen sizes which also imports the font and icon Libraries
 * Javascript
+    * The project uses a small amount of javascript to toggle the mobile navigation and the provide the pop-up sign up form and client testimonials.
 
 ### Libraries
 * Google Fonts (Lato and Raleway)
@@ -114,11 +158,37 @@ https://unsplash.com/photos/NYrVisodQ2M
 * Balsamic (Wireframe)
 * Concepts (Initial drawing)
 
+
 ## Testing
+* I want to hear feedback from current users of the software
+* I want to find examples of prices for a similar size event
+* I want to try a demo before I agree to buy
+* I want a quick way to sign up
+* I want to view some how-to videos / guides
+* I want to easily get in touch if I have any questions
+* I want to know how resilient the software is and how it works on a green-field festival site
+* I want to feel assured that the software will be supported for years to come
+* I want the website to work flawlessly, as proof of the software itself
+
+### Manual Testing
+I have preformed manual tests on a number of browsers and devices to cover most scenarious and feel assured the website works as intended for all visitors. This included using google dev tools to simulate different screen sizes and using a real android and apple phone.
+
+#### Navigation across platforms
+I want the navigation items to have a margin around them so they stand apart; the internal links to scroll smoothly to the corresponding section; and on mobile the menu to slide out of view behing a hanburger icon.
+
+I tested the navigation on mobile with chrome and safari and on desktop with chrome, edge and firefox, also using the browsers developer tools. The navigation in desktop and mobile views worked across all the devices although the scroll speed seems to differ slightly.
+
+#### Current user testimonials
+I wanted to give feedback and information on current clients but not take up too much space on scree. For this reason I choose to use a popup when the user hovered over the clients logo. To do this I 
+
+#### Sign up form
+
+#### Contact form
+
+#### Video guides
+
 
 ### Discovered Bugs
-
-#### Solved
 
 * **Sign up button**
   * Sign-up button would move below hero image and disapeer behind the main section in mobile devices.
@@ -131,7 +201,6 @@ https://unsplash.com/photos/NYrVisodQ2M
 * **Multiple client logos**
   * The popup description would only open on the first container.
   * With help from [Mamun](https://stackoverflow.com/users/7461381/mamun) in [this post](https://stackoverflow.com/questions/50793136/javascript-click-function-only-works-on-first-element) I altered the javascript to loop thru each matching query.
-
 
 * **Main nav items**
   * When the screen size reduced to circa. 750px, the top navigation links crashed into each other
@@ -153,5 +222,17 @@ https://unsplash.com/photos/NYrVisodQ2M
   * All transitions happened on page load (which started from the non styled state)
   * This seems to be a bug with the chrome browser. I used advice on [this page](https://github.com/LeaVerou/prefixfree/issues/99) and added an empty script tag at the bottom of the body. This seems to have stopped the issue for me.
 
+* **favicon** 
+    * Developer tools report a 404 file missing for favicon.ico I hav't yet implemented an icon for the site.
 
 
+## Deployment
+
+
+## Credits
+
+### Content
+
+### Media
+
+### Acknowledgements
