@@ -179,6 +179,8 @@ The footer provides a "most recent" list of news / guides / papers etc to highli
 
 ## Testing
 
+As well as the manual testing below I have also used the W3C HTML and CSS validator tools. I found them very helpful to notify me of any potential problems and code that violates the standard. I also used the googles lighthouse to test the site load times and user experience.
+
 ### Manual Testing
 I have preformed manual tests on a number of browsers and devices to cover most scenarios and feel assured the website works as intended for all visitors. This included using google dev tools to simulate different screen sizes and using a real android and apple phone.
 
