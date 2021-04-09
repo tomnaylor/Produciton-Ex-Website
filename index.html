@@ -14,7 +14,7 @@
 <!-- ********************************************** HEADER WITH NAV SECTION -->
 
 <header>
-    <span id="header-hamburger" class="color-light display-block-mobile"><i class="fas fa-hamburger"></i></span>
+    <span id="header-hamburger" class="color-light display-block-mobile"><i class="fas fa-hamburger" aria-hidden="true"></i><span class="sr-only">Menu</span></span>
     <nav>
         <ul>
             <li class="display-block-mobile"><a href="index.html" class="color-light color-accent-hover text-upper">Home</a></li>
@@ -31,7 +31,7 @@
 
 <div id="hero-image">
     <button id="header-cta" class="button color-accent color-light-bg color-accent-bg-hover color-light-hover" 
-        onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Sign up</button>
+        onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"aria-hidden="true"></i> Sign up</button>
 
     <div id="hero-text">
         <h1 class="color-light text-upper">
@@ -89,7 +89,7 @@
     <hr class="main-section-hr color-accent-bg">
 
     <div class="text-center">
-        <button class="button color-light color-accent-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Sign up</button>
+        <button class="button color-light color-accent-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop" aria-hidden="true"></i> Sign up</button>
     </div>
 
     <!-- ********************************************** SUCCESS STORIES SECTION -->
@@ -194,7 +194,7 @@
         <hr class="main-section-hr color-light-bg">
 
         <div class="text-center">
-            <button class="button color-accent color-light-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop"></i> Sign up</button>
+            <button class="button color-accent color-light-bg" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-desktop" aria-hidden="true"></i> Sign up</button>
         </div>
     </section>
 
@@ -268,7 +268,7 @@
                 <label for="form-contact-message"><span class="color-accent text-bold">*</span> Your message</label>
                 <textarea id="form-contact-message" name="message" placeholder="Hi team..."></textarea>
             </div>
-            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-at"></i> Contact Us</button>
+            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-at" aria-hidden="true"></i> Contact Us</button>
         </form>    
     </section>
 
@@ -314,16 +314,16 @@
         <div class="footer-text-head text-upper color-light">Site <span class="color-accent-light">Info</span></div>
         <nav>
             <ul class="footer-ul">
-                <li><a href="index.html" class="color-light color-accent-hover">Home</a></li>
-                <li><a href="#features" class="color-light color-accent-hover">Features</a></li>
-                <li><a href="#pricing" class="color-light color-accent-hover">Pricing</a></li>
-                <li><a href="#guides" class="color-light color-accent-hover">Guides</a></li>
-                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')">Demo</a></li>
-                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')">Sign up</a></li>
-                <li><a href="#" class="color-light color-accent-hover">Accessibility</a></li>
-                <li><a href="#" class="color-light color-accent-hover">T&Cs</a></li>
-                <li><a href="#" class="color-light color-accent-hover">Privicy Notices</a></li>
-                <li><a href="#" class="color-light color-accent-hover">Cookies</a></li>
+                <li><a href="index.html" class="color-light color-accent-hover" title="Back to the home page">Home</a></li>
+                <li><a href="#features" class="color-light color-accent-hover" title="Features of the software">Features</a></li>
+                <li><a href="#pricing" class="color-light color-accent-hover" title="pricing guide">Pricing</a></li>
+                <li><a href="#guides" class="color-light color-accent-hover" title="video and written guides">Guides</a></li>
+                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')" title="view demo">Demo</a></li>
+                <li><a href="#" class="color-light color-accent-hover" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')" title="Sign up">Sign up</a></li>
+                <li><a href="#" class="color-light color-accent-hover" title="Accessibility">Accessibility</a></li>
+                <li><a href="#" class="color-light color-accent-hover" title="Terms and Conditions">T&Cs</a></li>
+                <li><a href="#" class="color-light color-accent-hover" title="Privicy Notices">Privicy Notices</a></li>
+                <li><a href="#" class="color-light color-accent-hover" title="Cookies">Cookies</a></li>
             </ul>
         </nav>
     </div>
@@ -398,7 +398,7 @@
 -->
 <div id="modal-signup" class="modal modal-hide">
     <section class="modal-section">
-        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
+        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-signup').classList.toggle('modal-hide')"><i class="fas fa-times" aria-hidden="true"></i> close</button>
     
         <h3 class="text-upper">Sign up</h3>
 
@@ -436,7 +436,7 @@
                 <label for="form-signup-zip"><span class="color-accent text-bold">*</span> Zip/Postcode</label>
                 <input type="text" id="form-signup-zip" name="zip" placeholder="CF3 2PU" required>
             </div>
-            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-sign-in-alt"></i> Signup</button>
+            <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> Signup</button>
         </form>
     </section>
 </div>
@@ -445,7 +445,7 @@
 <!-- ********************************************** DEMO MODAL POPUP -->
 <div id="modal-demo" class="modal modal-hide">
     <section class="modal-section">
-        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')"><i class="fas fa-times"></i> close</button>
+        <button class="button button-close color-accent-bg color-light" onclick="document.querySelector('#modal-demo').classList.toggle('modal-hide')"><i class="fas fa-times" aria-hidden="true"></i> close</button>
     
         <h3 class="text-upper">Demo</h3>
         <p>We have supplied a running demo for the software for appraisal. To log in to the demo please use the details below. All emails, alerts and communcation options have been removed</p>
