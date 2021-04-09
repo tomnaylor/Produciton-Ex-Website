@@ -56,7 +56,7 @@ As a user…
 ## Design
 
 ### Original sketch
-I drew an outline sketch with first to get a basic feel of a design. 
+I drew an outline sketch first to get a basic feel of a design. 
 ![Concepts sketch](assets/readme/concepts-sketch.jpg)
 
 
@@ -135,6 +135,10 @@ https://unsplash.com/photos/NYrVisodQ2M
   * When the screen size reduced to circa. 750px, the top navigation links crashed into each other
   * In the tablet only CSS I removed the centre logo to give the menu items more space
 
+* **Mobile home link**
+  * When in mobile view the home logo is removed for space. This was the  link back to the top of the index page. This stopped the user from being able to navigate easily.
+  * I added a mobile only home link at the top of the navigation ul list.
+
 * **Videos slowed page loads**
   * Adding the video guides reduced the lighthouse score as each video (x3) preloaded.
   * I added the preload="none" to each video and then to make them visually appealing, I added a poster image to show before playing the media.
@@ -145,7 +149,7 @@ https://unsplash.com/photos/NYrVisodQ2M
 
 * **Transitions**
   * All transitions happened on page load (which started from the non styled state)
-  * This seems to be a big with the chrome browser. I used advice on [this page](https://github.com/LeaVerou/prefixfree/issues/99) and added an empty script tag at the bottom of the body. This seems to have stopped the issue for me.
+  * This seems to be a bug with the chrome browser. I used advice on [this page](https://github.com/LeaVerou/prefixfree/issues/99) and added an empty script tag at the bottom of the body. This seems to have stopped the issue for me.
 
 
 

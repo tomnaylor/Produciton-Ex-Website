@@ -14,9 +14,10 @@
 <!-- ********************************************** HEADER WITH NAV SECTION -->
 
 <header>
-    <span id="header-hamburger" class="color-light"><i class="fas fa-hamburger"></i></span>
+    <span id="header-hamburger" class="color-light display-block-mobile"><i class="fas fa-hamburger"></i></span>
     <nav>
         <ul>
+            <li class="display-block-mobile"><a href="index.html" class="color-light color-accent-hover text-upper">Home</a></li>
             <li><a href="#features" class="color-light color-accent-hover text-upper">Features</a></li>
             <li><a href="#pricing" class="color-light color-accent-hover text-upper">Pricing</a></li>
             <li class="header-logo"><a href="index.html"><img src="assets/images/productionex-header-logo.png" width="50" height="50" alt="ProductionEx Logo"></a></li>
@@ -251,11 +252,11 @@
         <form class="main-section-form flexbox flexbox-wrap" method="POST" action="https://formdump.codeinstitute.net/">
 
             <div class="input-block">
-                <label for="form-contact-name" class="color-accent">Your Name</label>
+                <label for="form-contact-name"><span class="color-accent text-bold">*</span> Your Name</label>
                 <input type="text" id="form-contact-name" name="name" placeholder="John Doe" required>
             </div>
             <div class="input-block">
-                <label for="form-contact-festival" class="color-accent">Festival Name</label>
+                <label for="form-contact-festival"><span class="color-accent text-bold">*</span> Festival Name</label>
                 <input type="text" id="form-contact-festival" name="festival" placeholder="Dreamfields" required>
             </div>
             <div class="input-block">
@@ -263,11 +264,11 @@
                 <input type="text" id="form-contact-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
-                <label for="form-contact-email" class="color-accent">Email address</label>
+                <label for="form-contact-email"><span class="color-accent text-bold">*</span> Email address</label>
                 <input type="email" id="form-contact-email" name="email" placeholder="joe.blog@email.com" required>
             </div>
             <div class="input-block input-full">
-                <label for="form-contact-message" class="color-accent">Your message</label>
+                <label for="form-contact-message"><span class="color-accent text-bold">*</span> Your message</label>
                 <textarea id="form-contact-message" name="message" placeholder="Hi team..."></textarea>
             </div>
             <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-at"></i> Contact Us</button>
@@ -404,7 +405,7 @@
         <form method="POST" action="https://formdump.codeinstitute.net/">
 
             <div class="input-block">
-                <label for="form-signup-name" class="color-accent">Your Name</label>
+                <label for="form-signup-name"><span class="color-accent text-bold">*</span> Your Name</label>
                 <input type="text" id="form-signup-name" name="name" placeholder="John Doe" required>
             </div>
             <div class="input-block">
@@ -412,27 +413,27 @@
                 <input type="text" id="form-signup-phone" name="phone" placeholder="02920 123456">
             </div>
             <div class="input-block">
-                <label for="form-signup-email" class="color-accent">Email address</label>
+                <label for="form-signup-email"><span class="color-accent text-bold">*</span> Email address</label>
                 <input type="email" id="form-signup-email" name="email" placeholder="joe.blog@email.com" required>
             </div>
             <div class="input-block">
-                <label for="form-signup-company" class="color-accent">Legal company name</label>
+                <label for="form-signup-company"><span class="color-accent text-bold">*</span> Legal company name</label>
                 <input type="text" id="form-signup-company" name="company" placeholder="John Doe Ltd." required>
             </div>
             <div class="input-block">
-                <label for="form-signup-date" class="color-accent">Festival date</label>
+                <label for="form-signup-date"><span class="color-accent text-bold">*</span> Festival date</label>
                 <input type="date" id="form-signup-date" name="date" required>
             </div>
             <div class="input-block">
-                <label for="form-signup-address" class="color-accent">Admin address</label>
+                <label for="form-signup-address"><span class="color-accent text-bold">*</span> Admin address</label>
                 <input type="text" id="form-signup-address" name="address" placeholder="213 swn drive" required>
             </div>
             <div class="input-block">
-                <label for="form-signup-city" class="color-accent">City</label>
+                <label for="form-signup-city"><span class="color-accent text-bold">*</span> City</label>
                 <input type="text" id="form-signup-city" name="city" placeholder="Cardiff" required>
             </div>
             <div class="input-block">
-                <label for="form-signup-zip" class="color-accent">Zip/Postcode</label>
+                <label for="form-signup-zip"><span class="color-accent text-bold">*</span> Zip/Postcode</label>
                 <input type="text" id="form-signup-zip" name="zip" placeholder="CF3 2PU" required>
             </div>
             <button type="submit" value="contact" class="button color-accent-bg-hover color-accent-bg color-light"><i class="fas fa-sign-in-alt"></i> Signup</button>

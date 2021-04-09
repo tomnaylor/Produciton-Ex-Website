@@ -189,7 +189,7 @@ header:before {
     z-index: 2;
 }
 
-#header-hamburger {
+.display-block-mobile {
     display:none;
 }
 
@@ -716,6 +716,10 @@ form.main-section-form .input-full {
 
 @media only screen and (max-width: 600px) {
 
+    .display-block-mobile {
+        display: block;
+    }
+
     header {
         position: absolute;
         height:55px;
@@ -733,7 +737,6 @@ form.main-section-form .input-full {
     }
 
     #header-hamburger {
-        display:block;
         position: relative;
         top:10px;
         text-align: center;
